@@ -84,7 +84,319 @@
       "configured_dataset_mentions_found": [],
       "configured_model_count": 3,
       "configured_dataset_count": 2,
-      "note": "Mention checks are evidence aids, not proof of experimental use; review the cited paper sections/tables."
+      "configured_entity_evidence": {
+        "models": [
+          {
+            "entity": "PP-FormulaNet-L",
+            "snippet": "accuracy and efficiency. To meet the diverse needs of applications, we have developed two specialized models: PP-FormulaNet-L, tailored[cs.CV] for high-accuracy scenarios, and PP-FormulaNet-S, optimized for high-efficiency contexts. Ou"
+          },
+          {
+            "entity": "PP-FormulaNet-S",
+            "snippet": ", we have developed two specialized models: PP-FormulaNet-L, tailored[cs.CV] for high-accuracy scenarios, and PP-FormulaNet-S, optimized for high-efficiency contexts. Our extensive evaluations reveal that PP-FormulaNet-L attains accura"
+          },
+          {
+            "entity": "UniMERNet",
+            "snippet": "valuations reveal that PP-FormulaNet-L attains accuracy levels that surpass those of prominent models such as UniMERNet by a significant 6%. Conversely, PP-FormulaNet-S operates at speeds that are over 16 times faster. These adva"
+          }
+        ],
+        "datasets": [
+          {
+            "entity": "UniMERNet Benchmark",
+            "snippet": null
+          },
+          {
+            "entity": "Formula Mining System Dataset",
+            "snippet": null
+          }
+        ],
+        "tasks": [
+          {
+            "entity": "document-understanding",
+            "snippet": null
+          },
+          {
+            "entity": "mathematical-formula-recognition",
+            "snippet": null
+          },
+          {
+            "entity": "optical-character-recognition",
+            "snippet": null
+          }
+        ],
+        "methods": [
+          {
+            "entity": "deep-learning",
+            "snippet": null
+          },
+          {
+            "entity": "formula-recognition",
+            "snippet": null
+          },
+          {
+            "entity": "formula-data-mining",
+            "snippet": null
+          }
+        ]
+      },
+      "discovered_candidates_for_manual_review": {
+        "benchmark_or_dataset_candidates": [
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "-FormulaNet-S, optimized for high-efficiency contexts. Our extensive evaluations reveal that PP-FormulaNet-L attains accuracy levels that surpass those of prominent models such as UniMERNet by a significant 6%. Conversely, PP-FormulaNet-S operates at speeds that are over 16 times faster. These advancements facilitate seamless integration of PP-FormulaNet into a broad spectrum of document processing environ"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "narios. As depicted in Figure 1, PPspeed and model size, holds significant research value. FormulaNet-L delivers precision levels that are 6% To address the aforementioned issues, UniMERNet [1] higher than those of leading models such as UnimerNet, uses large-scale pre-training datasets from arXiv to enhance while PP-FormulaNet-S functions at speeds that are 16 model generalization for complex formulas. St"
+          },
+          {
+            "matched_text": "UnimerNet",
+            "snippet": "olds significant research value. FormulaNet-L delivers precision levels that are 6% To address the aforementioned issues, UniMERNet [1] higher than those of leading models such as UnimerNet, uses large-scale pre-training datasets from arXiv to enhance while PP-FormulaNet-S functions at speeds that are 16 model generalization for complex formulas. Strategies like times faster. reducing model dimensions, rep"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "racter counting task during formula recognition train- introduced innovative methods such as pix2tex [16], texify ing. BTTR [12] and ABM [13] utilize the Transformer ar- [17], and UniMERNet [1]. Notably, UniMERNet [1] has chitecture to replace traditional RNN decoders. By incorpo- been trained on a large-scale dataset consisting of millions rating a bidirectional language modeling mechanism, they of sample"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "ing formula recognition train- introduced innovative methods such as pix2tex [16], texify ing. BTTR [12] and ABM [13] utilize the Transformer ar- [17], and UniMERNet [1]. Notably, UniMERNet [1] has chitecture to replace traditional RNN decoders. By incorpo- been trained on a large-scale dataset consisting of millions rating a bidirectional language modeling mechanism, they of samples, significantly enhanci"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "t unfeasible to re-pretrain the trimmed models in prac- The distillation framework was trained on a diverse cor- 5 Table 1. The Recognition Performance of Different Methods on the UniMERNet-1M and arXiv-4M Test Sets. UniMERNet-1M arXiv-4M GPU inference GPU inference Avg- Model SPE- CPE- Easy- Middle- Hard- time (ms) time (ms) BLEU↑ BLEU↑ BLEU↑ BLEU↑ BLEU↑ BLEU↑ (batch=1) (batch=15) Pix2tex[16] 0.8780 0.567"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "ed models in prac- The distillation framework was trained on a diverse cor- 5 Table 1. The Recognition Performance of Different Methods on the UniMERNet-1M and arXiv-4M Test Sets. UniMERNet-1M arXiv-4M GPU inference GPU inference Avg- Model SPE- CPE- Easy- Middle- Hard- time (ms) time (ms) BLEU↑ BLEU↑ BLEU↑ BLEU↑ BLEU↑ BLEU↑ (batch=1) (batch=15) Pix2tex[16] 0.8780 0.5670 0.8151 0.7546 0.5746 0.7163 1244.61"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "del SPE- CPE- Easy- Middle- Hard- time (ms) time (ms) BLEU↑ BLEU↑ BLEU↑ BLEU↑ BLEU↑ BLEU↑ (batch=1) (batch=15) Pix2tex[16] 0.8780 0.5670 0.8151 0.7546 0.5746 0.7163 1244.61 147.38 UniMERNet [1] 0.9187 0.9251 0.8659 0.8229 0.7741 0.8613 2266.96 536.75 PP-FormulaNet-S 0.8694 0.8071 0.9295 0.9113 0.8392 0.8712 202.25 32.85 PP-FormulaNet-L 0.9055 0.9207 0.9392 0.9273 0.9142 0.9213 1976.52 332.12 pus containing"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "43pp) compared to 4. Experiment ImageNet-pretrained baselines. 4.1. Datasets and Evaluation Metrics 3.4. Multi-Token Parallel Prediction In this paper, the model is trained on the UniMERNet-1M Current mainstream formula recognition algorithms typ- dataset [1] and a self-constructed arXiv-4M dataset, totalically employ an autoregressive generation architecture, ing 5 million entries. The proposed method is"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "can significantly reduce inference ef- Specifically, the test sets include the simple and complex ficiency, particularly when dealing with complex formulas formula test sets from UniMERNet [1], as well as the simthat exceed 1024 tokens in length. While existing studies, ple, medium, and complex formula test sets from arXiv-4M. such as the LAST method [2], introduced multi-line par- In line with most formu"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "multi-token parallel prediction method is pro- During the training phase, a data augmentation strategy conposed, designed to improve the inference efficiency of com- sistent with UniMERNet [1] is employed, which specifiplex formulas. cally includes operations such as dilation, erosion, weather As shown in the Fig. 2, the parallel causal mask is a key noise, random affine transformations, Gaussian noise, a"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "parative experiments were conducted with state-of-the- 0.9148, representing a 1.8% improvement compared to the art (SOTA) methods on the test sets of the arXiv-4M dataset original UniMERNet with a dimension of 1024. Based on and UniMERNet-1M, as detailed in Table 1. In terms of acthis outcome, Vary-VIT-B is ultimately selected as the backcuracy, PP-FormulaNet-S and PP-FormulaNet-L achieve an bone network f"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "-the- 0.9148, representing a 1.8% improvement compared to the art (SOTA) methods on the test sets of the arXiv-4M dataset original UniMERNet with a dimension of 1024. Based on and UniMERNet-1M, as detailed in Table 1. In terms of acthis outcome, Vary-VIT-B is ultimately selected as the backcuracy, PP-FormulaNet-S and PP-FormulaNet-L achieve an bone network for PP-FormulaNet-L. average BLEU score (Avg-BLEU)"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "the pre- ness and versatility of knowledge distillation across diftrained model. Specifically, when the recognition network ferent backbone networks. Additionally, given that PPis UniMERNet, using pre-trained weights results in a 4.75% HGNetV2-B4 achieved the optimal BLEU scores in the performance improvement on the complex formula dataset, recognition task, it is selected as the backbone network for fully"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "the inference of autoregressive models, a multi-token technique, a 5.23% performance gap remains compared to parallel prediction technique is designed, enabling the dethe original UniMERNet model with a dimension of 1024. coder to predict multiple tokens in a single step. As shown To further optimize model performance, replacement ex- in Table 4, when the parallel steps are set to 2, 3, 4, and 5, periments"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "ectively. However, bone network, the model’s recognition performance reaches as the number of parallel steps increases, the model’s accu- 3We are comparing the original version of UniMERNet. We will pro- racy declines more rapidly: when the parallel steps increase vide a more detailed comparison with the new version in the future. from 1 to 2, accuracy decreases by 1.26%, when the paral- 7 Table 4. The Imp"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "ce [11] Bohan Li, Ye Yuan, Dingkang Liang, Xiao Liu, Zhilong Ji, process of autoregressive models. Experimental results Jinfeng Bai, Wenyu Liu, and Xiang Bai. When counting on the UniMERNet-1M and the self-constructed arXiv-4M meets hmer: Counting-aware network for handwritten mathdatasets demonstrate that PP-FormulaNet achieves signif- ematical expression recognition. In Shai Avidan, Gabriel icant improve"
+          },
+          {
+            "matched_text": "Unimernet",
+            "snippet": "ognition via attention aggregation based bi- [1] Bin Wang, Zhuangcheng Gu, Guang Liang, Bo Zhang directional mutual learning. In AAAI, 2021. 3 Chao Xu, Botian Shi, and Conghui He. Unimernet: A univer- [14] Wenqi Zhao and Liangcai Gao. Comer: Modeling coverage sal network for real-world mathematical expression recogni- for transformer-based handwritten mathematical expression tion. arXiv preprint arXiv:2404"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "016. 7 9 Appendix of “PP-FormulaNet: Bridging Accuracy and Efficiency in Advanced Formula Recognition” 1. The Visualization Results of Different Formula Recognition Methods on the UniMERNet-1M and arXiv-4M Test Sets 1.1. Simple Formula (a) Pix2tex [16] (25 M) (b) UniMERNet [1] (392 M) (c) GPT-4o (Unknown) (d) Qwen2.5-VL[21] (72B) (e) PP-FormulaNet-S (58 M) (f) PP-FormulaNet-L (179 M) Figure A. Visualizatio"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "rmula Recognition” 1. The Visualization Results of Different Formula Recognition Methods on the UniMERNet-1M and arXiv-4M Test Sets 1.1. Simple Formula (a) Pix2tex [16] (25 M) (b) UniMERNet [1] (392 M) (c) GPT-4o (Unknown) (d) Qwen2.5-VL[21] (72B) (e) PP-FormulaNet-S (58 M) (f) PP-FormulaNet-L (179 M) Figure A. Visualization of recognition results from different methods on simple formulas. The left image i"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "ion result. The blank on the right indicates that there is a syntax error in the generated formula, preventing it from rendering. 1 1.2. Middle Formula (a) Pix2tex [16] (25 M) (b) UniMERNet [1] (392 M) (c) GPT-4o (Unknown) (d) Qwen2.5-VL-72B[21] (72B) (e) PP-FormulaNet-S (58 M) (f) PP-FormulaNet-L (179 M) Figure B. Visualization of recognition results from different methods on middle formulas. The left ima"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "ction result. The blank on the right indicates that there is a syntax error in the generated formula, preventing it from rendering. 2 1.3. Hard Formula (a) Pix2tex [16] (25 M) (b) UniMERNet [1] (392 M) (c) GPT-4o (Unknown) (d) Qwen2.5-VL[21] (72B) (e) PP-FormulaNet-S (58 M) (f) PP-FormulaNet-L (179 M) Figure C. Visualization of recognition results from different methods on hard formulas. The left image is"
+          },
+          {
+            "matched_text": "UniMERNet",
+            "snippet": "esult. The blank on the right indicates that there is a syntax error in the generated formula, preventing it from rendering. 3 1.4. Handwritten Formula (a) Pix2tex [16] (25 M) (b) UniMERNet [1] (392 M) (c) GPT-4o (Unknown) (d) Qwen2.5-VL[21] (72B) (e) PP-FormulaNet-S (58 M) (f) PP-FormulaNet-L (179 M) Figure D. Visualization of recognition results from different methods on handwritten formulas. The left im"
+          }
+        ],
+        "metric_claim_candidates": [
+          {
+            "matched_text": "Accuracy",
+            "snippet": "PP-FormulaNet: Bridging Accuracy and Efficiency in Advanced Formula Recognition Hongen Liu1,2, Cheng Cui1, Yuning Du1, Yi Liu1, Gang Pan2 1PaddlePaddle Team, Baidu Inc. 2College of Intelligence and Computing, Tianjin University 2025 {liuhongen, cuichen"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "n easily work with. LaTeX is the most common format used for this purpose. In this work, we present PP-FormulaNet, a state-of-the-art formula recognition model that excels in both accuracy and efficiency. To meet the diverse needs of applications, we have developed two specialized models: PP-FormulaNet-L, tailored[cs.CV] for high-accuracy scenarios, and PP-FormulaNet-S, optimized for high-efficiency conte"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "n model that excels in both accuracy and efficiency. To meet the diverse needs of applications, we have developed two specialized models: PP-FormulaNet-L, tailored[cs.CV] for high-accuracy scenarios, and PP-FormulaNet-S, optimized for high-efficiency contexts. Our extensive evaluations reveal that PP-FormulaNet-L attains accuracy levels that surpass those of prominent models such as UniMERNet by a signifi"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "rmulaNet-L, tailored[cs.CV] for high-accuracy scenarios, and PP-FormulaNet-S, optimized for high-efficiency contexts. Our extensive evaluations reveal that PP-FormulaNet-L attains accuracy levels that surpass those of prominent models such as UniMERNet by a significant 6%. Conversely, PP-FormulaNet-S operates at speeds that are over 16 times faster. These advancements facilitate seamless integration of PP"
+          },
+          {
+            "matched_text": "6%",
+            "snippet": "r high-efficiency contexts. Our extensive evaluations reveal that PP-FormulaNet-L attains accuracy levels that surpass those of prominent models such as UniMERNet by a significant 6%. Conversely, PP-FormulaNet-S operates at speeds that are over 16 times faster. These advancements facilitate seamless integration of PP-FormulaNet into a broad spectrum of document processing environments that involve i"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "ining user-defined comdocument parsing scenarios. Additionally, these algorithms mands. This significantly enhances the completeness and tend to prioritize improvements in formula accuracy, often accuracy of formula dataset construction. at the expense of inference speed and model size. There- • We introduce PP-FormulaNet, a formula recognition fore, enhancing the generalization ability of formula algo- m"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "ed comdocument parsing scenarios. Additionally, these algorithms mands. This significantly enhances the completeness and tend to prioritize improvements in formula accuracy, often accuracy of formula dataset construction. at the expense of inference speed and model size. There- • We introduce PP-FormulaNet, a formula recognition fore, enhancing the generalization ability of formula algo- model specificall"
+          },
+          {
+            "matched_text": "inference speed",
+            "snippet": "thms mands. This significantly enhances the completeness and tend to prioritize improvements in formula accuracy, often accuracy of formula dataset construction. at the expense of inference speed and model size. There- • We introduce PP-FormulaNet, a formula recognition fore, enhancing the generalization ability of formula algo- model specifically designed for real-world document rithms in complex scenarios, whi"
+          },
+          {
+            "matched_text": "6%",
+            "snippet": ", while optimizing inference analysis scenarios. As depicted in Figure 1, PPspeed and model size, holds significant research value. FormulaNet-L delivers precision levels that are 6% To address the aforementioned issues, UniMERNet [1] higher than those of leading models such as UnimerNet, uses large-scale pre-training datasets from arXiv to enhance while PP-FormulaNet-S functions at speeds that are"
+          },
+          {
+            "matched_text": "inference speed",
+            "snippet": "such as weight interpolation and with large-kernel convolutions, and using multi-line bidi- model distillation to effectively utilize the formula reprectional decoding [2] improve inference speed. However, resentations in pre-trained weights during the model these methods have limitations. Crawling programs that lightweighting process. rely on \\begin{equation} tags often discard formulas • We offer a new perspec"
+          },
+          {
+            "matched_text": "inference speed",
+            "snippet": "ti-token prediction techniques, commands like \\def and \\newcommand. Moreover, re- which significantly reduce the number of inference steps ducing model size doesn’t always enhance inference speed for formula sequences. due to the autoregressive nature of models, where multiple iterative steps are required to predict the formula. How- 2. Related Works ever, during model lightweighting, there is an inevitable Exis"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "required to predict the formula. How- 2. Related Works ever, during model lightweighting, there is an inevitable Existing formula recognition algorithms can mainly be clasloss of accuracy, making it challenging for the model to sified into three categories: traditional machine learning accurately predict the sequence termination point. Conse- methods, deep learning methods, and large model-driven quently"
+          },
+          {
+            "matched_text": "inference speed",
+            "snippet": "methods. has decreased, the total number of inference steps has actually increased. Balancing both, there is little change in the 2.1. Traditional Machine Learning Methods overall inference speed of the model. Traditional machine learning methods [5–7] primarily rely In this paper, we adopt the method of crawling arXiv on handcrafted feature extraction and classifiers. These papers to obtain a large dataset of f"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "l commands and ensured compatibility with various formula the two-dimensional structure of formula images. [6] imidentifiers. Based on this program, a dataset of 4 mil- proved the accuracy of formula character recognition by uslion arXiv formulas is constructed. Additionally, we sig- ing segmental K-means to initialize the Gaussian Mixture nificantly enhance the CNN network’s capability to model Model par"
+          },
+          {
+            "matched_text": "inference speed",
+            "snippet": "-VIT-B resolution from 1024 × 1024 to 768 × 768, and the decoder dimensions from 1024 to 512/384. Additionally, multi-token prediction is implemented in PP-FormulaNet-S to enhance inference speed by predicting multiple consecutive tokens in a single forward pass. bs, be and bp represent the start token, end token, and padding token, respectively. recognition has achieved breakthrough progress, with sig- LaTeX ex"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "token, and padding token, respectively. recognition has achieved breakthrough progress, with sig- LaTeX expression sequences. LAST [2] innovatively emnificant improvements in both accuracy and recognition ef- ploys a line-level bidirectional decoder strategy combined ficiency. Current deep learning-based methods [2, 8–15] with a line position encoding module to achieve parallel typically employ an encoder"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "udent networks periments demonstrate that models loaded with pre-trained respectively, where D and P represent their corresponding weights achieve significantly higher recognition accuracy feature dimensions, B denotes the Batch size. To bridge the than those trained from scratch. However, compressing dimensional discrepancy (D ̸= P), we introduce a learnthe formula recognition model necessitates trimming"
+          },
+          {
+            "matched_text": "1.8%",
+            "snippet": ".4851 PP-HGNetV2 0.8087 0.6357 15.6M -B4[4] ✓ 0.8432 0.6874 4.3. Comparison with State-of-the-Arts Comparative experiments were conducted with state-of-the- 0.9148, representing a 1.8% improvement compared to the art (SOTA) methods on the test sets of the arXiv-4M dataset original UniMERNet with a dimension of 1024. Based on and UniMERNet-1M, as detailed in Table 1. In terms of acthis outcome, Vary-VI"
+          },
+          {
+            "matched_text": "0.99%",
+            "snippet": "Vary-VIT-B is ultimately selected as the backcuracy, PP-FormulaNet-S and PP-FormulaNet-L achieve an bone network for PP-FormulaNet-L. average BLEU score (Avg-BLEU) improvement of 0.99% Impact of knowledge distillationand 6%, respectively, over the current open-source SOTA Despite the Vary-VIT-B backbone network achievingmethod, UniMERNet3, across five test datasets, demonoutstanding recognition perfor"
+          },
+          {
+            "matched_text": "6%",
+            "snippet": "backcuracy, PP-FormulaNet-S and PP-FormulaNet-L achieve an bone network for PP-FormulaNet-L. average BLEU score (Avg-BLEU) improvement of 0.99% Impact of knowledge distillationand 6%, respectively, over the current open-source SOTA Despite the Vary-VIT-B backbone network achievingmethod, UniMERNet3, across five test datasets, demonoutstanding recognition performance, its large number ofstrating sign"
+          },
+          {
+            "matched_text": "16x",
+            "snippet": "rding inferparameters and the inherent O(n2) computational complex-ence speed, under batch=15, PP-FormulaNet-S achieves a ity of Transformers lead to longer inference times. To ad-16x faster GPU inference speed compared to UniMERdress this issue, knowledge distillation experiments wereNet, while PP-FormulaNet-L reduces the inference time by conducted on Vary-VIT-B using various CNN-based back-61%. Th"
+          },
+          {
+            "matched_text": "inference speed",
+            "snippet": "meters and the inherent O(n2) computational complex-ence speed, under batch=15, PP-FormulaNet-S achieves a ity of Transformers lead to longer inference times. To ad-16x faster GPU inference speed compared to UniMERdress this issue, knowledge distillation experiments wereNet, while PP-FormulaNet-L reduces the inference time by conducted on Vary-VIT-B using various CNN-based back-61%. These results indicate that P"
+          },
+          {
+            "matched_text": "61%",
+            "snippet": "red to UniMERdress this issue, knowledge distillation experiments wereNet, while PP-FormulaNet-L reduces the inference time by conducted on Vary-VIT-B using various CNN-based back-61%. These results indicate that PP-FormulaNet not only bone networks. The experimental results in Table 3 demon-surpasses existing methods in accuracy but also achieves strate that knowledge distillation significantly enha"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "y-VIT-B using various CNN-based back-61%. These results indicate that PP-FormulaNet not only bone networks. The experimental results in Table 3 demon-surpasses existing methods in accuracy but also achieves strate that knowledge distillation significantly enhancessubstantial improvements in inference efficiency. This is model performance across different backbone networks.particularly evident in batch pro"
+          },
+          {
+            "matched_text": "2.36%",
+            "snippet": "ifically, when the backbone network is ResNet50,performance advantages are even more pronounced. knowledge distillation results in BLEU-Score improve- 4.4. Ablation Study ments of 2.36% and 4.79% on simple and complex formula datasets, respectively. When the backbone network Ablation experiments were conducted on the UniMERNetis PP-HGNetV2-B1, the effect of knowledge distillation 1M dataset to verify t"
+          },
+          {
+            "matched_text": "4.79%",
+            "snippet": "when the backbone network is ResNet50,performance advantages are even more pronounced. knowledge distillation results in BLEU-Score improve- 4.4. Ablation Study ments of 2.36% and 4.79% on simple and complex formula datasets, respectively. When the backbone network Ablation experiments were conducted on the UniMERNetis PP-HGNetV2-B1, the effect of knowledge distillation 1M dataset to verify the impact"
+          },
+          {
+            "matched_text": "15.43%",
+            "snippet": "dataset to verify the impact of knowledge distillation, is even more remarkable, achieving BLEU-Score improveweight interpolation, and multi-token parallel prediction on ments of 15.43% and 21.48% on simple and complex forformula recognition performance. mula datasets, respectively. Similarly, when the backbone Impact of weight interpolation To enable the network is PP-HGNetV2-B4, knowledge distillatio"
+          },
+          {
+            "matched_text": "21.48%",
+            "snippet": "verify the impact of knowledge distillation, is even more remarkable, achieving BLEU-Score improveweight interpolation, and multi-token parallel prediction on ments of 15.43% and 21.48% on simple and complex forformula recognition performance. mula datasets, respectively. Similarly, when the backbone Impact of weight interpolation To enable the network is PP-HGNetV2-B4, knowledge distillation also dime"
+          },
+          {
+            "matched_text": "3.45%",
+            "snippet": "tion also dimension-pruned model to continue utilizing pre-trained performs excellently, with BLEU-Score improvements of weights, a weight interpolation technique is proposed. Ex- 3.45% and 5.17% on simple and complex formula datasets, perimental results in Table 2 demonstrate that this method respectively. These results fully demonstrate the effectiveeffectively preserves the performance advantages of"
+          },
+          {
+            "matched_text": "5.17%",
+            "snippet": "dimension-pruned model to continue utilizing pre-trained performs excellently, with BLEU-Score improvements of weights, a weight interpolation technique is proposed. Ex- 3.45% and 5.17% on simple and complex formula datasets, perimental results in Table 2 demonstrate that this method respectively. These results fully demonstrate the effectiveeffectively preserves the performance advantages of the pre-"
+          },
+          {
+            "matched_text": "4.75%",
+            "snippet": "ation across diftrained model. Specifically, when the recognition network ferent backbone networks. Additionally, given that PPis UniMERNet, using pre-trained weights results in a 4.75% HGNetV2-B4 achieved the optimal BLEU scores in the performance improvement on the complex formula dataset, recognition task, it is selected as the backbone network for fully validating the effectiveness of the weight in"
+          },
+          {
+            "matched_text": "5.23%",
+            "snippet": "- Impact of multi-token parallel prediction To accelermance improvement achieved by the weight interpolation ate the inference of autoregressive models, a multi-token technique, a 5.23% performance gap remains compared to parallel prediction technique is designed, enabling the dethe original UniMERNet model with a dimension of 1024. coder to predict multiple tokens in a single step. As shown To further"
+          },
+          {
+            "matched_text": "inference speed",
+            "snippet": "urther optimize model performance, replacement ex- in Table 4, when the parallel steps are set to 2, 3, 4, and 5, periments on the backbone network were conducted. The the model’s inference speed increases by 2.05 times, 2.86 results indicate that when Vary-VIT-B is used as the back- times, 3.77 times, and 4.63 times, respectively. However, bone network, the model’s recognition performance reaches as the number"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "al version of UniMERNet. We will pro- racy declines more rapidly: when the parallel steps increase vide a more detailed comparison with the new version in the future. from 1 to 2, accuracy decreases by 1.26%, when the paral- 7 Table 4. The Impact of Multi-token Parallel Prediction on Recog- [3] Haoran Wei, Chenglong Liu, Jinyue Chen, Jia Wang, Lingyu nition Performance. Kong, Yanming Xu, Zheng Ge, Liang Z"
+          },
+          {
+            "matched_text": "1.26%",
+            "snippet": "t. We will pro- racy declines more rapidly: when the parallel steps increase vide a more detailed comparison with the new version in the future. from 1 to 2, accuracy decreases by 1.26%, when the paral- 7 Table 4. The Impact of Multi-token Parallel Prediction on Recog- [3] Haoran Wei, Chenglong Liu, Jinyue Chen, Jia Wang, Lingyu nition Performance. Kong, Yanming Xu, Zheng Ge, Liang Zhao, Jianjian Sun,"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "cal 5 0.8048 600.08 expressions using 2d stochastic context-free grammars and hidden markov models. Pattern Recognition Letters, 35:58– 67, 2014. 2 lel steps increase from 3 to 4, accuracy decreases by 2.86%, [6] Lei Hu and Richard Zanibbi. Hmm-based recognition of onand when it increases from 4 to 5, the decline in accuracy line handwritten mathematical symbols using segmental kreaches 3.55%. Considering"
+          },
+          {
+            "matched_text": "2.86%",
+            "snippet": "pressions using 2d stochastic context-free grammars and hidden markov models. Pattern Recognition Letters, 35:58– 67, 2014. 2 lel steps increase from 3 to 4, accuracy decreases by 2.86%, [6] Lei Hu and Richard Zanibbi. Hmm-based recognition of onand when it increases from 4 to 5, the decline in accuracy line handwritten mathematical symbols using segmental kreaches 3.55%. Considering the trade-off betw"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": ", 2014. 2 lel steps increase from 3 to 4, accuracy decreases by 2.86%, [6] Lei Hu and Richard Zanibbi. Hmm-based recognition of onand when it increases from 4 to 5, the decline in accuracy line handwritten mathematical symbols using segmental kreaches 3.55%. Considering the trade-off between accuracy means initialization and a modified pen-up/down feature. In and speed, a parallel step count of 3 is ultim"
+          },
+          {
+            "matched_text": "3.55%",
+            "snippet": "6] Lei Hu and Richard Zanibbi. Hmm-based recognition of onand when it increases from 4 to 5, the decline in accuracy line handwritten mathematical symbols using segmental kreaches 3.55%. Considering the trade-off between accuracy means initialization and a modified pen-up/down feature. In and speed, a parallel step count of 3 is ultimately chosen for ICDAR, pages 457–462, 2011. 2 the PP-FormulaNet-S mo"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "recognition of onand when it increases from 4 to 5, the decline in accuracy line handwritten mathematical symbols using segmental kreaches 3.55%. Considering the trade-off between accuracy means initialization and a modified pen-up/down feature. In and speed, a parallel step count of 3 is ultimately chosen for ICDAR, pages 457–462, 2011. 2 the PP-FormulaNet-S model. [7] Robert H. Anderson. Syntax-directed"
+          }
+        ]
+      },
+      "note": "Candidates and text matches are evidence aids, not proof of experimental use; verify entities and numeric claims in the paper's methods/experiments/results sections."
     },
     "2510.13998": {
       "pdf_path": "papers\\2510.13998.pdf",
@@ -159,10 +471,157 @@
         "Qwen",
         "MiniLM"
       ],
-      "configured_dataset_mentions_found": [],
+      "configured_dataset_mentions_found": [
+        "MNLI",
+        "QNLI",
+        "SST-2"
+      ],
       "configured_model_count": 4,
-      "configured_dataset_count": 0,
-      "note": "Mention checks are evidence aids, not proof of experimental use; review the cited paper sections/tables."
+      "configured_dataset_count": 4,
+      "configured_entity_evidence": {
+        "models": [
+          {
+            "entity": "BitNet-b1.58",
+            "snippet": null
+          },
+          {
+            "entity": "BitDistill",
+            "snippet": "Furu Wei† Microsoft Research https://aka.ms/GeneralAI Abstract In this paper, we present BitNet Distillation (BitDistill), a lightweight2025 pipeline that fine-tunes off-the-shelf full-precision LLMs (e.g., Qwen) into 1.58bit prec"
+          },
+          {
+            "entity": "Qwen",
+            "snippet": "istillation (BitDistill), a lightweight2025 pipeline that fine-tunes off-the-shelf full-precision LLMs (e.g., Qwen) into 1.58bit precision (i.e., ternary weights {-1, 0, 1}) for specific downstream tasks, achieving strong ta"
+          },
+          {
+            "entity": "MiniLM",
+            "snippet": "echniques: the SubLN module, as introduced in BitNet [WMD+23]; multi-head attention distillation, based 15 on MiniLM [WBH+20]; and continual pre-training, which serves as a crucial warm-up step to mitigate the scalability issu"
+          }
+        ],
+        "datasets": [
+          {
+            "entity": "MNLI",
+            "snippet": "guage Understanding Evaluation (GLUE) benchmark [WSM+19]*: the Multi-Genre Natural Language Inference Corpus (MNLI) [WNB18], the Question-answering Natural Language Inference dataset (QNLI) [RZLL16], and the Stanford Sentime"
+          },
+          {
+            "entity": "QNLI",
+            "snippet": "Natural Language Inference Corpus (MNLI) [WNB18], the Question-answering Natural Language Inference dataset (QNLI) [RZLL16], and the Stanford Sentiment Treebank (SST-2) [SPW+13]. These datasets are employed for both trainin"
+          },
+          {
+            "entity": "SST-2",
+            "snippet": "e Question-answering Natural Language Inference dataset (QNLI) [RZLL16], and the Stanford Sentiment Treebank (SST-2) [SPW+13]. These datasets are employed for both training and evaluation to comprehensively assess the effecti"
+          },
+          {
+            "entity": "CNN/DailyMail (CNNDM)",
+            "snippet": null
+          }
+        ],
+        "tasks": [
+          {
+            "entity": "large-language-model-compression",
+            "snippet": null
+          },
+          {
+            "entity": "model-distillation",
+            "snippet": null
+          },
+          {
+            "entity": "efficient-inference",
+            "snippet": null
+          }
+        ],
+        "methods": [
+          {
+            "entity": "1.58-bit-quantization",
+            "snippet": null
+          },
+          {
+            "entity": "SubLN",
+            "snippet": "rformance with minimal computational cost.Oct Specifically, BitDistill incorporates three key techniques: the SubLN module, as introduced in BitNet [WMD+23]; multi-head attention distillation, based 15 on MiniLM [WBH+20]; and"
+          },
+          {
+            "entity": "multi-head-attention-distillation",
+            "snippet": null
+          },
+          {
+            "entity": "continual-pretraining",
+            "snippet": null
+          }
+        ]
+      },
+      "discovered_candidates_for_manual_review": {
+        "benchmark_or_dataset_candidates": [],
+        "metric_claim_candidates": [
+          {
+            "matched_text": "memory savings",
+            "snippet": "Ms on specific tasks. Experimental results show that BitDistill achieves performance comparable to the fullprecision counterpart models across model size, while enabling up to 10× memory savings and 2.65× faster inference on CPUs. Code is available at github.com/microsoft/BitNet.[cs.LG] Task Performance Comparison on Inference Speed (CPUs) Classification (Left) & Summarization (Right) and Memory Comparison 91.5"
+          },
+          {
+            "matched_text": "Inference Speed",
+            "snippet": "oss model size, while enabling up to 10× memory savings and 2.65× faster inference on CPUs. Code is available at github.com/microsoft/BitNet.[cs.LG] Task Performance Comparison on Inference Speed (CPUs) Classification (Left) & Summarization (Right) and Memory Comparison 91.5 91.4 27.6 27.4 89.6 89.5 88.0 88.2 1000 1 88 27 s (%) 15.4 14.3 / 2.65× 10× 83 ROUGE GB 13.9 & 25 Tokens 600 0.5 Accuracy 78 BLEU 24.0 76.1"
+          },
+          {
+            "matched_text": "Accuracy",
+            "snippet": "fication (Left) & Summarization (Right) and Memory Comparison 91.5 91.4 27.6 27.4 89.6 89.5 88.0 88.2 1000 1 88 27 s (%) 15.4 14.3 / 2.65× 10× 83 ROUGE GB 13.9 & 25 Tokens 600 0.5 Accuracy 78 BLEU 24.0 76.1 75.3 74.1 73 23 200 0arXiv:2510.13998v1 0.6B 1.7B 4B 0.6B Inference Speed Memory FP16 1.58-bit BitDistill (Ours) 1.58-bit BitNet-SFT FP16 1.58-bit BitNet Figure 1: Performance on downstream tasks acros"
+          },
+          {
+            "matched_text": "Inference Speed",
+            "snippet": "6 89.5 88.0 88.2 1000 1 88 27 s (%) 15.4 14.3 / 2.65× 10× 83 ROUGE GB 13.9 & 25 Tokens 600 0.5 Accuracy 78 BLEU 24.0 76.1 75.3 74.1 73 23 200 0arXiv:2510.13998v1 0.6B 1.7B 4B 0.6B Inference Speed Memory FP16 1.58-bit BitDistill (Ours) 1.58-bit BitNet-SFT FP16 1.58-bit BitNet Figure 1: Performance on downstream tasks across model size, with inference speed and memory efficiency comparison. We observed that direct"
+          },
+          {
+            "matched_text": "inference speed",
+            "snippet": "0.6B 1.7B 4B 0.6B Inference Speed Memory FP16 1.58-bit BitDistill (Ours) 1.58-bit BitNet-SFT FP16 1.58-bit BitNet Figure 1: Performance on downstream tasks across model size, with inference speed and memory efficiency comparison. We observed that directly finetuning full-precision LLMs into 1.58-bit LLMs (denoted as 1.58-bit BitNet-SFT) leads to a notable performance gap compared to the FP16 baseline, and this g"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "m to dramatically reduce memory footprint and accelerate inference, offering a promising avenue for efficient deployment in downstream applications. However, achieving competitive accuracy on downstream applications with 1.58-bit BitNet generally requires pretraining from scratch on large-scale corpora [TXL+25, MWH+25] first, resulting in substantial computational and energy overhead. Furthermore, as illu"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "ization, (ii) continued pre-training to mitigate scale-related performance gaps, and (iii) MiniLMbased [WWD+20, WBH+20] multi-head attention distillation to recover full-precision accuracy. Through extensive evaluations across four benchmarks and diverse model scales, we demonstrate that BitDistill scales effectively, achieving downstream task performance on par with fullprecision baselines. At the same t"
+          },
+          {
+            "matched_text": "memory savings",
+            "snippet": "e demonstrate that BitDistill scales effectively, achieving downstream task performance on par with fullprecision baselines. At the same time, as shown in Figure 1, it reduces 10× memory savings and 2.65× faster inference on CPUs, offering significant improvements in latency, throughput, memory efficiency, and energy consumption, which makes it particularly well-suited for deployment on resource-constrained har"
+          },
+          {
+            "matched_text": "memory savings",
+            "snippet": "ks and model scales show that BitDistill enables 1.58-bit quantized LLMs to achieve downstream performance comparable to their fullprecision counterparts, while enabling up to 10× memory savings and 2.65× faster inference on CPUs. 2 Preliminaries 1.58-bit Quantization. Following [MWM+24], we adopt per-tensor quantization using the absmean function to map the weights of existing LLMs into ternary values, i.e., {"
+          },
+          {
+            "matched_text": "1 X",
+            "snippet": "een the student and teacher models and improve downstream task performance, scaled by two distillation coefficients, λ and γ, i.e., L = LCE + λLLD + γLAD, (13) N |yi| where LCE = −1 X X log Pθ yti | xi . (14) N i=1 t=1 Here LCE denotes the cross-entropy loss on the downstream dataset. λ and γ control the trade-off between distillation and model fitting. 4 Experiments 4.1 Experimental Setup Datasets."
+          },
+          {
+            "matched_text": "300X",
+            "snippet": "ce and fair comparisons across methods. We fix the maximum training sequence length to 512 tokens and the batch size to 32. All models are trained on servers equipped with 8×AMD Mi300X GPUs. Specifically, we set the temperature for logits distillation (Eq. 9) to 5.0. For the classification task, we use λ = 10 and γ = 1e5 in Eq. 14, while for the summarization task, we set λ = 1 and γ = 1e3. We set αi"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "ngs. For both classification and summarization task, we fix the sampling parameters by setting top-p to 1.0 and the temperature to 0. Classification performance is evaluated using accuracy. For the summarization task, we set the maximum generation length to 4096 tokens. Summarization quality is assessed using BLEU [PRWZ02] and ROUGE-1, ROUGE-2, ROUGE-L and ROUGE-SUM [Lin04]. For model runtime efficiency,"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "s are reported in Table 1 and Table 2. Across different model sizes and tasks, the proposed 1.58-bit BitNet models trained with our distillation framework (BitDistill) demonstrate accuracy that is largely comparable to their full-precision counterparts, with only marginal differences observed in most cases. At the same time, the 1.58-bit models deliver substantial gains in system efficiency, including up"
+          },
+          {
+            "matched_text": "inference speed",
+            "snippet": "ion counterparts, with only marginal differences observed in most cases. At the same time, the 1.58-bit models deliver substantial gains in system efficiency, including up to a 2× inference speedup on CPUs and nearly an order-of-magnitude reduction in memory footprint. These improvements underline the practical utility of our approach for scenarios where computational resources are constrained, while also showin"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "op in downstream performance. This suggests that each stage plays a complementary role, and that the full pipeline is necessary to obtain the best trade-off between efficiency and accuracy. Effect of different distillation techniques in Stage-3 §3.3. In the final stage of our framework, we introduce two complementary distillation techniques to better optimize 1.58-bit BitNet models for downstream tasks. T"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "Distillation for LLMs Knowledge distillation [KKCY24, HVD15, WWD+20, TXL+25] has proven to be an effective technique for compressing large language models (LLMs) while preserving accuracy, by transferring knowledge from a high-capacity teacher model to a more compact student model. More recently, it has also been shown effective for transferring knowledge from full-precision models to quantized LLMs. For"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "and then continued pretraining to recover critical representation capacity, followed by knowledge distillation at both the hidden-state and attention-relation levels to narrow the accuracy gap between low-precision students 9 and high-precision teachers. Extensive experiments on multiple downstream tasks demonstrate that our method, BitDistill, achieves performance competitive with FP16 models while signi"
+          }
+        ]
+      },
+      "note": "Candidates and text matches are evidence aids, not proof of experimental use; verify entities and numeric claims in the paper's methods/experiments/results sections."
     },
     "2607.18859": {
       "pdf_path": "papers\\2607.18859.pdf",
@@ -256,7 +715,287 @@
       ],
       "configured_model_count": 7,
       "configured_dataset_count": 1,
-      "note": "Mention checks are evidence aids, not proof of experimental use; review the cited paper sections/tables."
+      "configured_entity_evidence": {
+        "models": [
+          {
+            "entity": "PhoenixRepair",
+            "snippet": "IEEE TRANSACTIONS ON SOFTWARE ENGINEERING, VOL. XX, NO. X, XX 2026 1 PhoenixRepair: Rethinking Repair Strategy Exploration in Software Agents Tianyue Jiang1, Yanlin Wang 1,†, Xin He1, Daya Guo"
+          },
+          {
+            "entity": "DeepSeek-V3.1",
+            "snippet": "ves the largest relative Different Frameworks on SWE-Bench-Verified. improvement of 7.8% over SWE-agent under DeepSeek-V3.1, and attains the highest resolved rate of 76.0% Pass@1 under MiniMax-M2.5. Meanwhile, it achieves higher faul"
+          },
+          {
+            "entity": "DeepSeek-V3.2",
+            "snippet": "r experiments, we evaluate PhoenixRepair across five backbone A. Experimental Settings models: DeepSeek-V3.1, DeepSeek-V3.2, Qwen-Coder-Plus, 1) Datasets: We conduct experiments with PhoenixRepair GLM-4.7, and MiniMax-M2.5. For each"
+          },
+          {
+            "entity": "Qwen-Coder-Plus",
+            "snippet": "we evaluate PhoenixRepair across five backbone A. Experimental Settings models: DeepSeek-V3.1, DeepSeek-V3.2, Qwen-Coder-Plus, 1) Datasets: We conduct experiments with PhoenixRepair GLM-4.7, and MiniMax-M2.5. For each task, we sample e"
+          },
+          {
+            "entity": "GLM-4.7",
+            "snippet": "models: DeepSeek-V3.1, DeepSeek-V3.2, Qwen-Coder-Plus, 1) Datasets: We conduct experiments with PhoenixRepair GLM-4.7, and MiniMax-M2.5. For each task, we sample edit on SWE-Bench-Verified [18], which contains 500 manually loca"
+          },
+          {
+            "entity": "MiniMax-M2.5",
+            "snippet": "te better patches,21 culminating in final-round generation guided by distilled insights Fig. 1: Comparison of MiniMax-M2.5 Performance Under from all historical attempts. Experiments on SWE-bench-Verified demonstrate that PhoenixRep"
+          },
+          {
+            "entity": "SWE-agent",
+            "snippet": "enixRepair achieves the largest relative Different Frameworks on SWE-Bench-Verified. improvement of 7.8% over SWE-agent under DeepSeek-V3.1, and attains the highest resolved rate of 76.0% Pass@1 under MiniMax-M2.5. Meanwhile, it"
+          }
+        ],
+        "datasets": [
+          {
+            "entity": "SWE-bench Verified",
+            "snippet": "2025, pp. 8697–8727. such as the function level. Moreover, our two core mechanisms [18] OpenAI, “Introducing SWE-bench Verified,” demonstrate strong generalizability, as they can be effectively https://openai.com/index/introducing-swe-be"
+          }
+        ],
+        "tasks": [
+          {
+            "entity": "automated-software-repair",
+            "snippet": null
+          },
+          {
+            "entity": "repository-level-issue-resolution",
+            "snippet": null
+          },
+          {
+            "entity": "fault-localization",
+            "snippet": null
+          }
+        ],
+        "methods": [
+          {
+            "entity": "multi-agent-framework",
+            "snippet": null
+          },
+          {
+            "entity": "multi-location-sampling",
+            "snippet": null
+          },
+          {
+            "entity": "iterative-reflection",
+            "snippet": null
+          },
+          {
+            "entity": "patch-refinement",
+            "snippet": null
+          }
+        ]
+      },
+      "discovered_candidates_for_manual_review": {
+        "benchmark_or_dataset_candidates": [
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "ter patches,21 culminating in final-round generation guided by distilled insights Fig. 1: Comparison of MiniMax-M2.5 Performance Under from all historical attempts. Experiments on SWE-bench-Verified demonstrate that PhoenixRepair achieves the largest relative Different Frameworks on SWE-Bench-Verified. improvement of 7.8% over SWE-agent under DeepSeek-V3.1, and attains the highest resolved rate of 76.0% Pa"
+          },
+          {
+            "matched_text": "SWE-Bench",
+            "snippet": "MiniMax-M2.5 Performance Under from all historical attempts. Experiments on SWE-bench-Verified demonstrate that PhoenixRepair achieves the largest relative Different Frameworks on SWE-Bench-Verified. improvement of 7.8% over SWE-agent under DeepSeek-V3.1, and attains the highest resolved rate of 76.0% Pass@1 under MiniMax-M2.5. Meanwhile, it achieves higher fault localization A key challenge in issue resol"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "go#12193, the agent ability to handle authentic software engineering problems, assigns high confidence to forms/array.py and repeatedlyarXiv:2607.18859v1 Jimenez et al. introduced SWE-bench, a benchmark built samples it across five parallel runs, leading all repair attempts upon real GitHub issues [5]. Recently, considerable research to concentrate on an incorrect location. This is attributed to has focuse"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "on an incorrect location. This is attributed to has focused on developing agent-based methods to solve the inherent characteristics of probabilistic language models, the tasks in SWE-bench [6]–[8]. Such agent-based methods which exhibit a bias toward high-probability solution patterns, typically equip LLMs with predefined tools, enabling LLMs thereby restricting the diversity of the search space [12]–[14]"
+          },
+          {
+            "matched_text": "SWE-Bench",
+            "snippet": "Settings models: DeepSeek-V3.1, DeepSeek-V3.2, Qwen-Coder-Plus, 1) Datasets: We conduct experiments with PhoenixRepair GLM-4.7, and MiniMax-M2.5. For each task, we sample edit on SWE-Bench-Verified [18], which contains 500 manually locations for five iterations. A task is classified as having verified issues from SWE-bench [5]. high fault localization difficulty if the number of deduplicated 2) Metrics: W"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "iMax-M2.5. For each task, we sample edit on SWE-Bench-Verified [18], which contains 500 manually locations for five iterations. A task is classified as having verified issues from SWE-bench [5]. high fault localization difficulty if the number of deduplicated 2) Metrics: We employ the following metrics to evaluate edit locations exceeds four. For tasks with difficult fault the performance of all frameworks"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "with sophisticated code search capabilities to generate program V. THREATS TO VALIDITY modifications. In this section, we identify and discuss several potential Recent studies on SWE-bench have explored diverse dithreats to the validity of our study and the steps taken torections in agent design, verification, and training. Infmitigate them.Code [115] is an adversarial multi-agent framework for au- Intern"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "(NAACL), 2025. PhoenixRepair achieves state-of-the-art performance across [15] J. Lin, Y. Guo, Y. Han, S. Hu, Z. Ni, L. Wang, M. Chen, H. Liu, five open-source backbone models on SWE-bench-Verified. R. Chen, Y. He et al., “Se-agent: Self-evolution trajectory optimiza- Specifically, PhoenixRepair attains the highest absolute resolu- tion in multi-step reasoning with llm-based agents,” arXiv preprint arXiv:"
+          },
+          {
+            "matched_text": "SWE-bench Verified",
+            "snippet": "els Association for Computational Linguistics (Volume 1: Long Papers), 2025, pp. 8697–8727. such as the function level. Moreover, our two core mechanisms [18] OpenAI, “Introducing SWE-bench Verified,” demonstrate strong generalizability, as they can be effectively https://openai.com/index/introducing-swe-bench-verified/, 2024. [19] A. Antoniades, A. ¨Orwall, K. Zhang, Y. Xie, A. Goyal, and W. Wang,transferred to ot"
+          },
+          {
+            "matched_text": "swe-bench",
+            "snippet": "reover, our two core mechanisms [18] OpenAI, “Introducing SWE-bench Verified,” demonstrate strong generalizability, as they can be effectively https://openai.com/index/introducing-swe-bench-verified/, 2024. [19] A. Antoniades, A. ¨Orwall, K. Zhang, Y. Xie, A. Goyal, and W. Wang,transferred to other agent-based methods such as Mini-SWE- “Swe-search: Enhancing software agents with monte carlo tree search Age"
+          },
+          {
+            "matched_text": "Swe-bench",
+            "snippet": "F. Zhang, Y. Wang, J. Chen, [5] C. E. Jimenez, J. Yang, A. Wettig, S. Yao, K. Pei, O. Press, and X. Liu, Y. Ma, H. Zhang, Q. Wang, and Z. Zheng, “Towards an under- K. Narasimhan, “Swe-bench: Can language models resolve real-world standing of context utilization in code intelligence,” ACM Computing github issues?” arXiv preprint arXiv:2310.06770, 2023. Surveys, vol. 58, no. 11, pp. 1–43, 2026. [6] J. Yang,"
+          }
+        ],
+        "metric_claim_candidates": [
+          {
+            "matched_text": "7.8%",
+            "snippet": "all historical attempts. Experiments on SWE-bench-Verified demonstrate that PhoenixRepair achieves the largest relative Different Frameworks on SWE-Bench-Verified. improvement of 7.8% over SWE-agent under DeepSeek-V3.1, and attains the highest resolved rate of 76.0% Pass@1 under MiniMax-M2.5. Meanwhile, it achieves higher fault localization A key challenge in issue resolution lies in fault localiza-["
+          },
+          {
+            "matched_text": "76.0%",
+            "snippet": "ixRepair achieves the largest relative Different Frameworks on SWE-Bench-Verified. improvement of 7.8% over SWE-agent under DeepSeek-V3.1, and attains the highest resolved rate of 76.0% Pass@1 under MiniMax-M2.5. Meanwhile, it achieves higher fault localization A key challenge in issue resolution lies in fault localiza-[cs.AI] accuracy than existing approaches. Our code is available at tion [10]. The c"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "ir achieves the largest relative Different Frameworks on SWE-Bench-Verified. improvement of 7.8% over SWE-agent under DeepSeek-V3.1, and attains the highest resolved rate of 76.0% Pass@1 under MiniMax-M2.5. Meanwhile, it achieves higher fault localization A key challenge in issue resolution lies in fault localiza-[cs.AI] accuracy than existing approaches. Our code is available at tion [10]. The complexi"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "s the highest resolved rate of 76.0% Pass@1 under MiniMax-M2.5. Meanwhile, it achieves higher fault localization A key challenge in issue resolution lies in fault localiza-[cs.AI] accuracy than existing approaches. Our code is available at tion [10]. The complexity arises from the fact that multiple https://github.com/DeepSoftwareAnalytics/PhoenixRepair. code snippets may be relevant to a given issue, res"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "ve in producing a correct repair. tion demonstrates the effectiveness of PhoenixRepair, which P2: The exploration of repair attempts on each edit consistently achieves the highest Pass@1 across all evalulocation is insufficient. As shown in Figure 5, a single repair ated models, attaining up to 76.0% with MiniMax-M2.5 and attempt at the correct edit location may still be insufficient, improving fault lo"
+          },
+          {
+            "matched_text": "76.0%",
+            "snippet": "repair attempts on each edit consistently achieves the highest Pass@1 across all evalulocation is insufficient. As shown in Figure 5, a single repair ated models, attaining up to 76.0% with MiniMax-M2.5 and attempt at the correct edit location may still be insufficient, improving fault localization accuracy across all granularities. as the generated patch can remain problematic. In the case, We furthe"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "in Figure 5, a single repair ated models, attaining up to 76.0% with MiniMax-M2.5 and attempt at the correct edit location may still be insufficient, improving fault localization accuracy across all granularities. as the generated patch can remain problematic. In the case, We further validate its generalizability by integrating the the first repair at the correct location location-1 incompletely proposed"
+          },
+          {
+            "matched_text": "7.8%",
+            "snippet": "n patches generated for same model configuration. Specifically, PhoenixRepair each edit location, thereby addressing P2. Our framework achieves the largest relative improvement of 7.8% over employs a localization sampling agent that iteratively samples SWE-agent under DeepSeek-V3.1, and attains the highest edit locations. For tasks with more difficult fault localization, resolved rate of 76.0% Pass@1"
+          },
+          {
+            "matched_text": "76.0%",
+            "snippet": "n sampling agent that iteratively samples SWE-agent under DeepSeek-V3.1, and attains the highest edit locations. For tasks with more difficult fault localization, resolved rate of 76.0% Pass@1 under MiniMax-M2.5. we utilize a graph-based localization agent to provide addi- • Our proposed mechanisms generalize well across differtional cross-file dependency information. For each sampled ent agent-based m"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "ling agent that iteratively samples SWE-agent under DeepSeek-V3.1, and attains the highest edit locations. For tasks with more difficult fault localization, resolved rate of 76.0% Pass@1 under MiniMax-M2.5. we utilize a graph-based localization agent to provide addi- • Our proposed mechanisms generalize well across differtional cross-file dependency information. For each sampled ent agent-based methods,"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "f committing to a single one. Second, for each candidate of PhoenixRepair, which consistently achieves the highest location, it runs iterative reflection and refinement to improve Pass@1 across all evaluated backbone model. Our evalua- the patch across rounds, using feedback from past attempts. IEEE TRANSACTIONS ON SOFTWARE ENGINEERING, VOL. XX, NO. X, XX 2026 3 MetaInfo (1) Multi-Location Sampling (3)"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "ith difficult fault the performance of all frameworks: localization, we retain the top two entities identified by the graph-based localization agent. For tasks with simple fault • Pass@1: Following previous studies [5], [6], [19], we evallocalization, we perform three parallel executions on the final uate model performance using Pass@1, which measures the round edit location. proportion of issues correc"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "or tasks with simple fault • Pass@1: Following previous studies [5], [6], [19], we evallocalization, we perform three parallel executions on the final uate model performance using Pass@1, which measures the round edit location. proportion of issues correctly resolved by the first generated patch. • Acc@1: Following prior work [16], [17], [19], we evaluate B. RQ1: Overall Performance the accuracy of loca"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "nd edit location. proportion of issues correctly resolved by the first generated patch. • Acc@1: Following prior work [16], [17], [19], we evaluate B. RQ1: Overall Performance the accuracy of localization at three different levels of In RQ1, we investigate whether expanding the repair stratgranularity. egy search space through our proposed mechanisms can im- – File level: We report the metric File Acc@1."
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "m- – File level: We report the metric File Acc@1. A predic- prove issue resolution performance. Table I summarizes the tion is considered correct if the edit location contains all Pass@1 of all methods. Overall, PhoenixRepair achieves the files that require modification. best performance under each model configuration, demonstrat- – Module or class level: We report the metric Module ing its effectivenes"
+          },
+          {
+            "matched_text": "7.8%",
+            "snippet": "surpasses it in every experimental setting. modification. Under DeepSeek-V3.1, PhoenixRepair achieves a relative gain – Function or method level: We report the metric Function of 7.8%, the largest among all five settings, suggesting that Acc@1. A prediction is considered correct if the edit the proposed mechanisms are especially effective when the location contains all functions and methods that requ"
+          },
+          {
+            "matched_text": "6.4%",
+            "snippet": "ines: We compare PhoenixRepair with two cate- ration. Under Qwen-Coder-Plus and GLM-4.7, PhoenixRepair gories of competitive baselines: yields a consistent relative improvement of 6.4% in both Procedure-based methods. We compare with Agent- cases, further supporting the robustness of the approach across less [16], a non-agentic pipeline that decomposes the repair different models. Under DeepSeek-V3.2,"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "6], a non-agentic pipeline that decomposes the repair different models. Under DeepSeek-V3.2, PhoenixRepair atprocess into several phases of localization, repair, and patch tains a Pass@1 of 74.4%, representing a relative improvement validation. of 7.2% over SWE-agent. Even with MiniMax-M2.5, which Agent-based methods. We include several competitive yields the highest absolute resolved rate of 76.0% amon"
+          },
+          {
+            "matched_text": "74.4%",
+            "snippet": "agentic pipeline that decomposes the repair different models. Under DeepSeek-V3.2, PhoenixRepair atprocess into several phases of localization, repair, and patch tains a Pass@1 of 74.4%, representing a relative improvement validation. of 7.2% over SWE-agent. Even with MiniMax-M2.5, which Agent-based methods. We include several competitive yields the highest absolute resolved rate of 76.0% among all age"
+          },
+          {
+            "matched_text": "7.2%",
+            "snippet": "ls. Under DeepSeek-V3.2, PhoenixRepair atprocess into several phases of localization, repair, and patch tains a Pass@1 of 74.4%, representing a relative improvement validation. of 7.2% over SWE-agent. Even with MiniMax-M2.5, which Agent-based methods. We include several competitive yields the highest absolute resolved rate of 76.0% among all agent-based frameworks specifically designed for automated c"
+          },
+          {
+            "matched_text": "76.0%",
+            "snippet": "tive improvement validation. of 7.2% over SWE-agent. Even with MiniMax-M2.5, which Agent-based methods. We include several competitive yields the highest absolute resolved rate of 76.0% among all agent-based frameworks specifically designed for automated configurations, PhoenixRepair still improves over SWE-agent program repair. by 5.3% relatively, demonstrating that the benefits of expanded • SWE-Sear"
+          },
+          {
+            "matched_text": "5.3%",
+            "snippet": "absolute resolved rate of 76.0% among all agent-based frameworks specifically designed for automated configurations, PhoenixRepair still improves over SWE-agent program repair. by 5.3% relatively, demonstrating that the benefits of expanded • SWE-Search [19]: This method integrates Monte Carlo strategy search persist even as the backbone model becomes Tree Search (MCTS) to systematically explore the r"
+          },
+          {
+            "matched_text": "9.1%",
+            "snippet": "bles agents to navigate reposi- tent and substantial relative improvements across all model tories, edit files, and run commands end-to-end to resolve configurations, ranging from 9.1% to 11.9%. These results issues [6]. highlight the inherent limitation of fixed-stage repair pipelines, • Mini-SWE-agent [20]: This is a minimalist agent scaffold which commit to a repair strategy without the ability to"
+          },
+          {
+            "matched_text": "11.9%",
+            "snippet": "nts to navigate reposi- tent and substantial relative improvements across all model tories, edit files, and run commands end-to-end to resolve configurations, ranging from 9.1% to 11.9%. These results issues [6]. highlight the inherent limitation of fixed-stage repair pipelines, • Mini-SWE-agent [20]: This is a minimalist agent scaffold which commit to a repair strategy without the ability to that reta"
+          },
+          {
+            "matched_text": "7.8%",
+            "snippet": ") 68.0 (340) Trae-agent 59.4 (297) 64.6 (323) 67.8 (339) 64.4 (322) 70.8 (354) SWE-agent 61.2 (306) 65.4 (327) 69.4 (347) 65.6 (328) 72.2 (361) Our method PHOENIXREPAIR 66.0 (330)↑7.8% 69.6 (348)↑6.4% 74.4 (372)↑7.2% 69.8 (349)↑6.4% 76.0 (380)↑5.3% TABLE II: Localization accuracy comparison results. Red per- Under the DeepSeek-V3.2 configuration, PhoenixRepair centages denote PhoenixRepair’s relative"
+          },
+          {
+            "matched_text": "6.4%",
+            "snippet": "e-agent 59.4 (297) 64.6 (323) 67.8 (339) 64.4 (322) 70.8 (354) SWE-agent 61.2 (306) 65.4 (327) 69.4 (347) 65.6 (328) 72.2 (361) Our method PHOENIXREPAIR 66.0 (330)↑7.8% 69.6 (348)↑6.4% 74.4 (372)↑7.2% 69.8 (349)↑6.4% 76.0 (380)↑5.3% TABLE II: Localization accuracy comparison results. Red per- Under the DeepSeek-V3.2 configuration, PhoenixRepair centages denote PhoenixRepair’s relative improvements ove"
+          },
+          {
+            "matched_text": "7.2%",
+            "snippet": "7) 64.6 (323) 67.8 (339) 64.4 (322) 70.8 (354) SWE-agent 61.2 (306) 65.4 (327) 69.4 (347) 65.6 (328) 72.2 (361) Our method PHOENIXREPAIR 66.0 (330)↑7.8% 69.6 (348)↑6.4% 74.4 (372)↑7.2% 69.8 (349)↑6.4% 76.0 (380)↑5.3% TABLE II: Localization accuracy comparison results. Red per- Under the DeepSeek-V3.2 configuration, PhoenixRepair centages denote PhoenixRepair’s relative improvements over attains Acc@1"
+          },
+          {
+            "matched_text": "6.4%",
+            "snippet": ".8 (339) 64.4 (322) 70.8 (354) SWE-agent 61.2 (306) 65.4 (327) 69.4 (347) 65.6 (328) 72.2 (361) Our method PHOENIXREPAIR 66.0 (330)↑7.8% 69.6 (348)↑6.4% 74.4 (372)↑7.2% 69.8 (349)↑6.4% 76.0 (380)↑5.3% TABLE II: Localization accuracy comparison results. Red per- Under the DeepSeek-V3.2 configuration, PhoenixRepair centages denote PhoenixRepair’s relative improvements over attains Acc@1 scores of 85.64%"
+          },
+          {
+            "matched_text": "5.3%",
+            "snippet": "22) 70.8 (354) SWE-agent 61.2 (306) 65.4 (327) 69.4 (347) 65.6 (328) 72.2 (361) Our method PHOENIXREPAIR 66.0 (330)↑7.8% 69.6 (348)↑6.4% 74.4 (372)↑7.2% 69.8 (349)↑6.4% 76.0 (380)↑5.3% TABLE II: Localization accuracy comparison results. Red per- Under the DeepSeek-V3.2 configuration, PhoenixRepair centages denote PhoenixRepair’s relative improvements over attains Acc@1 scores of 85.64%, 76.82%, and 66"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "2 (306) 65.4 (327) 69.4 (347) 65.6 (328) 72.2 (361) Our method PHOENIXREPAIR 66.0 (330)↑7.8% 69.6 (348)↑6.4% 74.4 (372)↑7.2% 69.8 (349)↑6.4% 76.0 (380)↑5.3% TABLE II: Localization accuracy comparison results. Red per- Under the DeepSeek-V3.2 configuration, PhoenixRepair centages denote PhoenixRepair’s relative improvements over attains Acc@1 scores of 85.64%, 76.82%, and 66.64% at SWE-agent. We evaluate m"
+          },
+          {
+            "matched_text": "85.64%",
+            "snippet": "ation accuracy comparison results. Red per- Under the DeepSeek-V3.2 configuration, PhoenixRepair centages denote PhoenixRepair’s relative improvements over attains Acc@1 scores of 85.64%, 76.82%, and 66.64% at SWE-agent. We evaluate methods with two LLMs: DeepSeek- the file, module, and function levels, respectively, yielding V3.2 (DS-V3.2) and Qwen3-Coder-Plus (Qwen3-CP). relative improvements of 3.13%"
+          },
+          {
+            "matched_text": "76.82%",
+            "snippet": "curacy comparison results. Red per- Under the DeepSeek-V3.2 configuration, PhoenixRepair centages denote PhoenixRepair’s relative improvements over attains Acc@1 scores of 85.64%, 76.82%, and 66.64% at SWE-agent. We evaluate methods with two LLMs: DeepSeek- the file, module, and function levels, respectively, yielding V3.2 (DS-V3.2) and Qwen3-Coder-Plus (Qwen3-CP). relative improvements of 3.13%, 3.50%,"
+          },
+          {
+            "matched_text": "66.64%",
+            "snippet": "rison results. Red per- Under the DeepSeek-V3.2 configuration, PhoenixRepair centages denote PhoenixRepair’s relative improvements over attains Acc@1 scores of 85.64%, 76.82%, and 66.64% at SWE-agent. We evaluate methods with two LLMs: DeepSeek- the file, module, and function levels, respectively, yielding V3.2 (DS-V3.2) and Qwen3-Coder-Plus (Qwen3-CP). relative improvements of 3.13%, 3.50%, and 5.08% o"
+          },
+          {
+            "matched_text": "3.13%",
+            "snippet": "We evaluate methods with two LLMs: DeepSeek- the file, module, and function levels, respectively, yielding V3.2 (DS-V3.2) and Qwen3-Coder-Plus (Qwen3-CP). relative improvements of 3.13%, 3.50%, and 5.08% over SWE-agent across the three granularities. Similar trends are File Module Function Method LLM Acc@1 Acc@1 Acc@1 observed under the Qwen3-Coder-Plus configuration, where PhoenixRepair achieves file-"
+          },
+          {
+            "matched_text": "3.50%",
+            "snippet": "uate methods with two LLMs: DeepSeek- the file, module, and function levels, respectively, yielding V3.2 (DS-V3.2) and Qwen3-Coder-Plus (Qwen3-CP). relative improvements of 3.13%, 3.50%, and 5.08% over SWE-agent across the three granularities. Similar trends are File Module Function Method LLM Acc@1 Acc@1 Acc@1 observed under the Qwen3-Coder-Plus configuration, where PhoenixRepair achieves file-level,"
+          },
+          {
+            "matched_text": "5.08%",
+            "snippet": "s with two LLMs: DeepSeek- the file, module, and function levels, respectively, yielding V3.2 (DS-V3.2) and Qwen3-Coder-Plus (Qwen3-CP). relative improvements of 3.13%, 3.50%, and 5.08% over SWE-agent across the three granularities. Similar trends are File Module Function Method LLM Acc@1 Acc@1 Acc@1 observed under the Qwen3-Coder-Plus configuration, where PhoenixRepair achieves file-level, module-leve"
+          },
+          {
+            "matched_text": "82.24%",
+            "snippet": "configuration, where PhoenixRepair achieves file-level, module-level, and function- OpenHands DS-V3.2 79.64 69.58 60.82 SWE-Search DS-V3.2 81.62 73.98 63.06 level Acc@1 scores of 82.24%, 74.22%, and 64.42%, cor- Trae-agent DS-V3.2 82.84 75.38 64.82 responding to relative improvements of 3.29%, 3.11%, and Mini-SWE-agent DS-V3.2 79.84 71.42 61.84 5.19% over SWE-agent. Notably, improvements are more pro-"
+          },
+          {
+            "matched_text": "74.22%",
+            "snippet": "ration, where PhoenixRepair achieves file-level, module-level, and function- OpenHands DS-V3.2 79.64 69.58 60.82 SWE-Search DS-V3.2 81.62 73.98 63.06 level Acc@1 scores of 82.24%, 74.22%, and 64.42%, cor- Trae-agent DS-V3.2 82.84 75.38 64.82 responding to relative improvements of 3.29%, 3.11%, and Mini-SWE-agent DS-V3.2 79.84 71.42 61.84 5.19% over SWE-agent. Notably, improvements are more pro- Live-SWE"
+          },
+          {
+            "matched_text": "64.42%",
+            "snippet": "e PhoenixRepair achieves file-level, module-level, and function- OpenHands DS-V3.2 79.64 69.58 60.82 SWE-Search DS-V3.2 81.62 73.98 63.06 level Acc@1 scores of 82.24%, 74.22%, and 64.42%, cor- Trae-agent DS-V3.2 82.84 75.38 64.82 responding to relative improvements of 3.29%, 3.11%, and Mini-SWE-agent DS-V3.2 79.84 71.42 61.84 5.19% over SWE-agent. Notably, improvements are more pro- Live-SWE-agent DS-V3"
+          },
+          {
+            "matched_text": "3.29%",
+            "snippet": "69.58 60.82 SWE-Search DS-V3.2 81.62 73.98 63.06 level Acc@1 scores of 82.24%, 74.22%, and 64.42%, cor- Trae-agent DS-V3.2 82.84 75.38 64.82 responding to relative improvements of 3.29%, 3.11%, and Mini-SWE-agent DS-V3.2 79.84 71.42 61.84 5.19% over SWE-agent. Notably, improvements are more pro- Live-SWE-agent DS-V3.2 81.24 73.42 62.84 nounced at the function level across both configurations, indi- Qwe"
+          }
+        ]
+      },
+      "note": "Candidates and text matches are evidence aids, not proof of experimental use; verify entities and numeric claims in the paper's methods/experiments/results sections."
     },
     "2507.23370": {
       "pdf_path": "papers\\2507.23370.pdf",
@@ -390,7 +1129,339 @@
       ],
       "configured_model_count": 1,
       "configured_dataset_count": 2,
-      "note": "Mention checks are evidence aids, not proof of experimental use; review the cited paper sections/tables."
+      "configured_entity_evidence": {
+        "models": [
+          {
+            "entity": "Trae Agent",
+            "snippet": "Trae Agent: An LLM-based Agent for Software Engineering with Test-time Scaling Trae Research Beijing, China opensource@m"
+          }
+        ],
+        "datasets": [
+          {
+            "entity": "SWE-bench",
+            "snippet": "tion, pruning, and selection. We conduct extensive experiments using three leading LLMs on the widely-adopted SWE-bench benchmark, comparing Trae Agent against four state-of-the-art ensemble reasoning techniques. Experimental res"
+          },
+          {
+            "entity": "SWE-bench Verified",
+            "snippet": "erage improvement of 10.22% over all baselines in terms of Pass@1. Trae Agent has achieved first place on the SWE-bench Verified leaderboard, with a notable Pass@1 score of 75.20%. We are pleased to release Trae Agent as an open-source pr"
+          }
+        ],
+        "tasks": [
+          {
+            "entity": "automated-software-engineering",
+            "snippet": null
+          },
+          {
+            "entity": "repository-level-issue-resolution",
+            "snippet": null
+          }
+        ],
+        "methods": [
+          {
+            "entity": "agent-based-ensemble-reasoning",
+            "snippet": null
+          },
+          {
+            "entity": "test-time-scaling",
+            "snippet": null
+          },
+          {
+            "entity": "generation-pruning-selection",
+            "snippet": null
+          }
+        ]
+      },
+      "discovered_candidates_for_manual_review": {
+        "benchmark_or_dataset_candidates": [
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "and repository-level understanding, through modular agents for generation, pruning, and selection. We conduct extensive experiments using three leading LLMs on the widely-adopted SWE-bench benchmark, comparing Trae Agent against four state-of-the-art ensemble reasoning techniques. Experimental results demonstrate that Trae Agent consistently achieves superior performance, with an average improvement of 10"
+          },
+          {
+            "matched_text": "SWE-bench Verified",
+            "snippet": "that Trae Agent consistently achieves superior performance, with an average improvement of 10.22% over all baselines in terms of Pass@1. Trae Agent has achieved first place on the SWE-bench Verified leaderboard, with a notable Pass@1 score of 75.20%. We are pleased to release Trae Agent as an open-source project to support the research community, with all resources available at https://github.com/bytedance/trae-age"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "vel software issues. For example, GPT-4o achieves a resolution rate of 92.70% on the function-level HumanEval benchmark [Liu et al., 2023], but only 11.99% on the repository-level SWE-bench benchmark [Yang et al., 2024]. This performance gap underscores the difficulty of real-world software issue resolution, which often requires global understanding of large codebases, cross-file reasoning, and the detecti"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "ensemble spaces and repository-level understanding, through modular agents for generation, pruning, and selection. • Extensive Evaluation: We conduct extensive experiments on the SWE-bench benchmark using three state-of-the-art LLMs, comparing Trae Agent with four leading baselines. Results show that Trae Agent consistently improves Pass@1 by 5.83%∼14.60%, demonstrating its robust effectiveness across set"
+          },
+          {
+            "matched_text": "SWE-bench Verified",
+            "snippet": "show that Trae Agent consistently improves Pass@1 by 5.83%∼14.60%, demonstrating its robust effectiveness across settings. Particularly, Trae Agent has achieved first place on the SWE-bench Verified leaderboard, with a notable Pass@1 score of 75.20%. • Public Artifact: To support the research community and facilitate future research, we release all resources available at https://github.com/bytedance/trae-agent. Our"
+          },
+          {
+            "matched_text": "SWE-bench Verified",
+            "snippet": "mpirical analysis. Figure 1 shows the performance of two state-of-the-art ensemble reasoning techniques (Augment [Code, 2025] and DeiBase [Zhang et al., 2024a]) on the widely-used SWE-bench Verified [Jimenez et al., 2023] benchmark using three leading LLMs (Gemini 2.5 Pro [DeepMind, 2025], Claude 3.7 Sonnet [Anthropic, 2025b], and GPT-4.1 [OpenAI, 2025a]). In particular, the Mixture setting refers to a round-robin"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "tribute to the overall effectiveness? • RQ4: How does the ensemble space affect the effectiveness of patch selection? 4.1 Benchmarks We evaluate the effectiveness of Trae Agent on SWE-bench [Jimenez et al., 2023], a widely-used benchmark for automated software issue resolution that comprises 2,294 real-world GitHub issues. However, prior studies [OpenAI, 2024, Wang et al., 2025c] have shown that the full S"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "benchmark for automated software issue resolution that comprises 2,294 real-world GitHub issues. However, prior studies [OpenAI, 2024, Wang et al., 2025c] have shown that the full SWE-bench dataset contains a significant number of low-quality and noisy instances. To address this limitation, OpenAI [OpenAI, 2025b] curated a high-quality subset called SWE-bench Verified [OpenAI, 2024], 10 which includes 500"
+          },
+          {
+            "matched_text": "SWE-bench Verified",
+            "snippet": "he full SWE-bench dataset contains a significant number of low-quality and noisy instances. To address this limitation, OpenAI [OpenAI, 2025b] curated a high-quality subset called SWE-bench Verified [OpenAI, 2024], 10 which includes 500 GitHub issues that have been manually verified by professional software developers to be reliable and non-problematic. Following existing work [Xia et al., 2025, Wang et al., 2025c,"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "ang et al., 2025], our evaluation focuses on this verified version. For each issue, all evaluated techniques receive only the issue description and the original codebase as input. SWE-bench also provides some golden tests for each GitHub issue to evaluate whether the generated patch solves the corresponding issue. Note that all regression tests used by Trae Agent are part of the original codebase, ensuring"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "mble reasoning techniques. It measures the functionality correctness of a generated patch by determining whether it successfully resolves the given software issue. For each issue, SWE-bench provides golden tests to verify patch correctness. In our evaluation, the ensemble reasoning technique selects a single patch per issue; if this patch passes all associated tests in the SWE-bench, the issue is deemed su"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "es golden tests to verify patch correctness. In our evaluation, the ensemble reasoning technique selects a single patch per issue; if this patch passes all associated tests in the SWE-bench, the issue is deemed successfully resolved. It is worth noting that Pass@1 is a stringent evaluation criterion, making improvements to this metric both technically challenging and practically meaningful [Xia et al., 202"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "OpenAI [OpenAI, 2025b], respectively. All other parameters are kept at their default values. To evaluate the functionality correctness of the selected patches, we use the official SWE-bench Docker environment to ensure consistency and reliability in testing [Jimenez et al., 2023]. 5 Results and Analysis 5.1 RQ1: Overall Effectiveness of Trae Agent 5.1.1 Process: To answer RQ1, we evaluate the performance o"
+          },
+          {
+            "matched_text": "SWE-bench Verified",
+            "snippet": "4 0 0 0 0 8 0 0 14 8 0 0 35 9 0 0 88 0 3 1 0 1212 3 0 0 1 (3) GPT-4.1 (4) Mixture Figure 9: Number of uniquely resolved issues across five studied ensemble reasoning techniques on SWE-bench Verified three leading LLMs (Gemini 2.5 Pro, Claude 3.7 Sonnet, and GPT-4.1). Additionally, we introduce a Mixture setting, where the three LLMs generate patches in a round-robin manner to further enhance the diversity of the ca"
+          },
+          {
+            "matched_text": "SWE-bench Verified",
+            "snippet": "e three LLMs generate patches in a round-robin manner to further enhance the diversity of the candidate patches. The effectiveness of each technique is assessed on the widely-used SWE-bench Verified benchmark using two metrics (Pass@1 and the number of uniquely resolved issues). Moreover, we include three reference baselines (introduced in Section 2): Oracle (representing the best-case performance of an ensemble te"
+          },
+          {
+            "matched_text": "SWE-bench Verified",
+            "snippet": "igure 11: Influence of the patch pruning component and its patch deduplication and regression testing strategies in terms of ensemble space (↓) Figure 12: Snapshot of the official SWE-bench Verified leaderboard as of July 2025. 5.4.2 Results As shown in Figure 11, Trae Agent, Trae AgentwoR, and Trae AgentwoD all reduce the ensemble space compared to Trae AgentwoP . Specifically, they achieve average reductions of 2"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "32.40% 24.60% 6 Discussion 6.1 Practical Impact Building autonomous agent-based systems for software engineering tasks has emerged as a leading research direction in recent years. SWE-bench, a widely adopted benchmark, encompasses real-world software engineering tasks such as bug fixing and feature implementation. As of July 2025, SWEbench has been downloaded over 500,000 times, with more than 90 agent-bas"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "g and feature implementation. As of July 2025, SWEbench has been downloaded over 500,000 times, with more than 90 agent-based techniques submitted to its official leaderboard. The SWE-bench leaderboard [bench Team, 2025] continuously tracks the state-of-the-art progress in agent-based software engineering systems. As shown in Figure 12, Trae Agent has achieved the first place on the SWE-bench Verified lead"
+          },
+          {
+            "matched_text": "SWE-bench Verified",
+            "snippet": "ch Team, 2025] continuously tracks the state-of-the-art progress in agent-based software engineering systems. As shown in Figure 12, Trae Agent has achieved the first place on the SWE-bench Verified leaderboard, with a notable Pass@1 score of 75.20%. Furthermore, our open-source GitHub repository has attracted over 8,000 stars (as of July 2025), indicating substantial community interest and adoption. Our findings s"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "gent. To evaluate the quality of these regression tests, we assess the consistency between their pruning decisions and the ground-truth results provided by the golden tests in the SWE-bench. Specifically, we examine whether the regression tests accurately determine the correctness of the candidate patches. As shown in Table 4, the regression tests achieve an Accuracy of 63.28%, a Precision of 61.20%, a Rec"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "sults and further strengthening the reliability of our findings. External Validity. This threat mainly lies in our experimental subjects. To address this, we adopt the widely-used SWE-bench benchmark and multiple evaluation metrics commonly used in the issue resolution domain [Zhang et al., 2024b,a, Ruan et al., 2025, Wang et al., 2025b]. We further evaluate Trae Agent against four state-of-the-art ensembl"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "a, Ruan et al., 2025, Wang et al., 2025b]. We further evaluate Trae Agent against four state-of-the-art ensemble reasoning techniques across three leading LLMs and the widely-used SWE-bench benchmark, ensuring comprehensive comparisons. In future work, we plan to extend our evaluation to additional benchmarks and LLMs to further assess the generalizability and robustness of Trae Agent across diverse settin"
+          },
+          {
+            "matched_text": "SWE-bench",
+            "snippet": "gh modular agents for generation, pruning, and selection. To comprehensively evaluate its performance, we conduct extensive experiments using three leading LLMs on the widely-used SWE-bench benchmark. The experimental results show that Trae Agent consistently outperforms four state-of-the-art ensemble reasoning baselines across all evaluation settings, demonstrating its effectiveness in enhancing LLM-based"
+          },
+          {
+            "matched_text": "Swe-bench",
+            "snippet": "pic. Build with claude. https://www.anthropic.com/api, 2025a. Anthropic. Claude 3.7 sonnet and claude code. https://www.anthropic.com/news/claude-3-7-sonnet, 2025b. S. bench Team. Swe-bench leaderboard. https://www.swebench.com/, 2025. M. Bordese. Unified diff python parsing/metadata extraction library. https://github.com/matiasb/ python-unidiff, 2025. I. Bouzenia, P. Devanbu, and M. Pradel. RepairAgent: A"
+          },
+          {
+            "matched_text": "swe-bench verified",
+            "snippet": "P. Buse and W. R. Weimer. Learning a metric for code readability. IEEE Transactions on software engineering, 36(4):546–558, 2009. T. Chen and C. Flaherty. #1 open-source agent on swe-bench verified by combining claude 3.7 and o1. https://www.augmentcode.com/blog/ 1-open-source-agent-on-swe-bench-verified-by-combining-claude-3-7-and-o1, 2025. 20 Y. Chen, Y. Wang, Y. Gu, X. He, P. Ghamisi, and X. Jia. Deep learning"
+          },
+          {
+            "matched_text": "swe-bench",
+            "snippet": ", 36(4):546–558, 2009. T. Chen and C. Flaherty. #1 open-source agent on swe-bench verified by combining claude 3.7 and o1. https://www.augmentcode.com/blog/ 1-open-source-agent-on-swe-bench-verified-by-combining-claude-3-7-and-o1, 2025. 20 Y. Chen, Y. Wang, Y. Gu, X. He, P. Ghamisi, and X. Jia. Deep learning ensemble for hyperspectral image classification. IEEE Journal of Selected Topics in Applied Earth O"
+          },
+          {
+            "matched_text": "swe-bench verified",
+            "snippet": "in, B. Mitchell, S. Mancoridis, K. Rees, M. Roper, et al. Reformulating software engineering as a search problem. IEE Proceedings-software, 150(3): 161–175, 2003. A. Code. Augment swe-bench verified agent. https://github.com/augmentcode/ augment-swebench-agent, 2025. I. Cohen, Y. Huang, J. Chen, J. Benesty, J. Benesty, J. Chen, Y. Huang, and I. Cohen. Pearson correlation coefficient. Noise reduction in speech proce"
+          },
+          {
+            "matched_text": "Swe-bench",
+            "snippet": ". Search-based software engineering. Information and software Technology, 43(14): 833–839, 2001. C. E. Jimenez, J. Yang, A. Wettig, S. Yao, K. Pei, O. Press, and K. R. Narasimhan. Swe-bench: Can language models resolve real-world github issues? In The Twelfth International Conference on Learning Representations, 2023. M. G. Kendall. A new measure of rank correlation. Biometrika, 30(1-2):81–93, 1938. J. Kim"
+          },
+          {
+            "matched_text": "swe-bench verified",
+            "snippet": "B. Duan, C. Pasareanu, and G. Yang. Enhancing llm code generation with ensembles: A similaritybased selection approach. arXiv preprint arXiv:2503.15838, 2025. OpenAI. Introducing swe-bench verified. https://openai.com/index/ introducing-swe-bench-verified/, 2024. OpenAI. Introducing gpt-4.1 in the api. https://openai.com/index/gpt-4-1/, 2025a. OpenAI. The fastest and most powerful platform for building ai products"
+          },
+          {
+            "matched_text": "swe-bench",
+            "snippet": "neration with ensembles: A similaritybased selection approach. arXiv preprint arXiv:2503.15838, 2025. OpenAI. Introducing swe-bench verified. https://openai.com/index/ introducing-swe-bench-verified/, 2024. OpenAI. Introducing gpt-4.1 in the api. https://openai.com/index/gpt-4-1/, 2025a. OpenAI. The fastest and most powerful platform for building ai products. https://openai.com/api/, 2025b. M. Papadakis, Y"
+          },
+          {
+            "matched_text": "swe-bench",
+            "snippet": "AI software developers as generalist agents. In The Thirteenth International Conference on Learning Representations, 2025b. Y. Wang, M. Pradel, and Z. Liu. Are\" solved issues\" in swe-bench really solved correctly? an empirical study. arXiv preprint arXiv:2503.15223, 2025c. F. Wilcoxon, S. Katti, R. A. Wilcox, et al. Critical values and probability levels for the Wilcoxon rank sum test and the Wilcoxon sig"
+          }
+        ],
+        "metric_claim_candidates": [
+          {
+            "matched_text": "10.22%",
+            "snippet": "st four state-of-the-art ensemble reasoning techniques. Experimental results demonstrate that Trae Agent consistently achieves superior performance, with an average improvement of 10.22% over all baselines in terms of Pass@1. Trae Agent has achieved first place on the SWE-bench Verified leaderboard, with a notable Pass@1 score of 75.20%. We are pleased to release Trae Agent as an open-source project to"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "oning techniques. Experimental results demonstrate that Trae Agent consistently achieves superior performance, with an average improvement of 10.22% over all baselines in terms of Pass@1. Trae Agent has achieved first place on the SWE-bench Verified leaderboard, with a notable Pass@1 score of 75.20%. We are pleased to release Trae Agent as an open-source project to support the research community, with a"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "performance, with an average improvement of 10.22% over all baselines in terms of Pass@1. Trae Agent has achieved first place on the SWE-bench Verified leaderboard, with a notable Pass@1 score of 75.20%. We are pleased to release Trae Agent as an open-source project to support the research community, with all resources available at https://github.com/bytedance/trae-agent. 1 Introduction Software issue r"
+          },
+          {
+            "matched_text": "75.20%",
+            "snippet": "h an average improvement of 10.22% over all baselines in terms of Pass@1. Trae Agent has achieved first place on the SWE-bench Verified leaderboard, with a notable Pass@1 score of 75.20%. We are pleased to release Trae Agent as an open-source project to support the research community, with all resources available at https://github.com/bytedance/trae-agent. 1 Introduction Software issue resolution refers"
+          },
+          {
+            "matched_text": "92.70%",
+            "snippet": "al., 2025]. Despite this progress, LLMs continue to face major challenges in resolving complex repository-level software issues. For example, GPT-4o achieves a resolution rate of 92.70% on the function-level HumanEval benchmark [Liu et al., 2023], but only 11.99% on the repository-level SWE-bench benchmark [Yang et al., 2024]. This performance gap underscores the difficulty of real-world software issue"
+          },
+          {
+            "matched_text": "11.99%",
+            "snippet": "resolving complex repository-level software issues. For example, GPT-4o achieves a resolution rate of 92.70% on the function-level HumanEval benchmark [Liu et al., 2023], but only 11.99% on the repository-level SWE-bench benchmark [Yang et al., 2024]. This performance gap underscores the difficulty of real-world software issue resolution, which often requires global understanding of large codebases, cro"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "DeiBase, and DeiBase w/ Pruning) across all evaluation settings, demonstrating its capability to enhance LLM-based software issue resolution. In particular, Trae Agent achieves a Pass@1 improvement ranging from 5.83% to 14.60%, where Pass@1 denotes the proportion of generated patches that pass all golden tests. We further investigate the impact of ensemble size, a critical hyper-parameter in ensemble r"
+          },
+          {
+            "matched_text": "5.83%",
+            "snippet": ") across all evaluation settings, demonstrating its capability to enhance LLM-based software issue resolution. In particular, Trae Agent achieves a Pass@1 improvement ranging from 5.83% to 14.60%, where Pass@1 denotes the proportion of generated patches that pass all golden tests. We further investigate the impact of ensemble size, a critical hyper-parameter in ensemble reasoning. The results reveal th"
+          },
+          {
+            "matched_text": "14.60%",
+            "snippet": "all evaluation settings, demonstrating its capability to enhance LLM-based software issue resolution. In particular, Trae Agent achieves a Pass@1 improvement ranging from 5.83% to 14.60%, where Pass@1 denotes the proportion of generated patches that pass all golden tests. We further investigate the impact of ensemble size, a critical hyper-parameter in ensemble reasoning. The results reveal that Trae Ag"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "settings, demonstrating its capability to enhance LLM-based software issue resolution. In particular, Trae Agent achieves a Pass@1 improvement ranging from 5.83% to 14.60%, where Pass@1 denotes the proportion of generated patches that pass all golden tests. We further investigate the impact of ensemble size, a critical hyper-parameter in ensemble reasoning. The results reveal that Trae Agent not only o"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "sive experiments on the SWE-bench benchmark using three state-of-the-art LLMs, comparing Trae Agent with four leading baselines. Results show that Trae Agent consistently improves Pass@1 by 5.83%∼14.60%, demonstrating its robust effectiveness across settings. Particularly, Trae Agent has achieved first place on the SWE-bench Verified leaderboard, with a notable Pass@1 score of 75.20%. • Public Artifact:"
+          },
+          {
+            "matched_text": "5.83%",
+            "snippet": "iments on the SWE-bench benchmark using three state-of-the-art LLMs, comparing Trae Agent with four leading baselines. Results show that Trae Agent consistently improves Pass@1 by 5.83%∼14.60%, demonstrating its robust effectiveness across settings. Particularly, Trae Agent has achieved first place on the SWE-bench Verified leaderboard, with a notable Pass@1 score of 75.20%. • Public Artifact: To suppo"
+          },
+          {
+            "matched_text": "14.60%",
+            "snippet": "on the SWE-bench benchmark using three state-of-the-art LLMs, comparing Trae Agent with four leading baselines. Results show that Trae Agent consistently improves Pass@1 by 5.83%∼14.60%, demonstrating its robust effectiveness across settings. Particularly, Trae Agent has achieved first place on the SWE-bench Verified leaderboard, with a notable Pass@1 score of 75.20%. • Public Artifact: To support the"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "@1 by 5.83%∼14.60%, demonstrating its robust effectiveness across settings. Particularly, Trae Agent has achieved first place on the SWE-bench Verified leaderboard, with a notable Pass@1 score of 75.20%. • Public Artifact: To support the research community and facilitate future research, we release all resources available at https://github.com/bytedance/trae-agent. Our open-source GitHub repository has"
+          },
+          {
+            "matched_text": "75.20%",
+            "snippet": "0%, demonstrating its robust effectiveness across settings. Particularly, Trae Agent has achieved first place on the SWE-bench Verified leaderboard, with a notable Pass@1 score of 75.20%. • Public Artifact: To support the research community and facilitate future research, we release all resources available at https://github.com/bytedance/trae-agent. Our open-source GitHub repository has attracted over 8"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "ble space. Taking Figure 1(1) as an example, the x-axis denotes the ensemble size N (i.e., the number of candidate patches generated by Gemini 2.5 Pro), while the y-axis shows the Pass@1 (i.e., the proportion of patches that pass all golden tests) metric. Following prior work [Zhang et al., 2024a], we report three additional reference metrics: (1) Oracle, representing the best-case performance where the"
+          },
+          {
+            "matched_text": "20.80%",
+            "snippet": "rformance of Average remains relatively stable, while the Oracle value consistently improves. Notably, when the ensemble size reaches 10, Oracle achieves an average improvement of 20.80% over Average in terms of Pass@1. This observation strongly supports previous findings that although the overall resolution rate remains stable across repeated runs, the set of issues successfully resolved varies across"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "atively stable, while the Oracle value consistently improves. Notably, when the ensemble size reaches 10, Oracle achieves an average improvement of 20.80% over Average in terms of Pass@1. This observation strongly supports previous findings that although the overall resolution rate remains stable across repeated runs, the set of issues successfully resolved varies across executions [Zhang et al., 2024a,"
+          },
+          {
+            "matched_text": "27.01%",
+            "snippet": "olution. Moreover, we observe that as the ensemble size increases, the Adversary value consistently declines. Specifically, when the ensemble size reaches 10, Adversary reduces by 27.01% on average compared to the Average in terms of Pass@1. This indicates that although the theoretical upper bound of 3 Adversary Oracle DeiBase Average Augment 75% 75% Oracle Oracle 65% 65% 55% 55% Pass@1 45% 35% 45% Adve"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "e increases, the Adversary value consistently declines. Specifically, when the ensemble size reaches 10, Adversary reduces by 27.01% on average compared to the Average in terms of Pass@1. This indicates that although the theoretical upper bound of 3 Adversary Oracle DeiBase Average Augment 75% 75% Oracle Oracle 65% 65% 55% 55% Pass@1 45% 35% 45% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5"
+          },
+          {
+            "matched_text": "75%",
+            "snippet": "ary reduces by 27.01% on average compared to the Average in terms of Pass@1. This indicates that although the theoretical upper bound of 3 Adversary Oracle DeiBase Average Augment 75% 75% Oracle Oracle 65% 65% 55% 55% Pass@1 45% 35% 45% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Orac"
+          },
+          {
+            "matched_text": "75%",
+            "snippet": "reduces by 27.01% on average compared to the Average in terms of Pass@1. This indicates that although the theoretical upper bound of 3 Adversary Oracle DeiBase Average Augment 75% 75% Oracle Oracle 65% 65% 55% 55% Pass@1 45% 35% 45% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 6"
+          },
+          {
+            "matched_text": "65%",
+            "snippet": "on average compared to the Average in terms of Pass@1. This indicates that although the theoretical upper bound of 3 Adversary Oracle DeiBase Average Augment 75% 75% Oracle Oracle 65% 65% 55% 55% Pass@1 45% 35% 45% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50%"
+          },
+          {
+            "matched_text": "65%",
+            "snippet": "verage compared to the Average in terms of Pass@1. This indicates that although the theoretical upper bound of 3 Adversary Oracle DeiBase Average Augment 75% 75% Oracle Oracle 65% 65% 55% 55% Pass@1 45% 35% 45% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50% Pas"
+          },
+          {
+            "matched_text": "55%",
+            "snippet": "ge compared to the Average in terms of Pass@1. This indicates that although the theoretical upper bound of 3 Adversary Oracle DeiBase Average Augment 75% 75% Oracle Oracle 65% 65% 55% 55% Pass@1 45% 35% 45% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50% Pass@1"
+          },
+          {
+            "matched_text": "55%",
+            "snippet": "ompared to the Average in terms of Pass@1. This indicates that although the theoretical upper bound of 3 Adversary Oracle DeiBase Average Augment 75% 75% Oracle Oracle 65% 65% 55% 55% Pass@1 45% 35% 45% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50% Pass@1 45%"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "red to the Average in terms of Pass@1. This indicates that although the theoretical upper bound of 3 Adversary Oracle DeiBase Average Augment 75% 75% Oracle Oracle 65% 65% 55% 55% Pass@1 45% 35% 45% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50% Pass@1 45% 40% 35%"
+          },
+          {
+            "matched_text": "45%",
+            "snippet": "the Average in terms of Pass@1. This indicates that although the theoretical upper bound of 3 Adversary Oracle DeiBase Average Augment 75% 75% Oracle Oracle 65% 65% 55% 55% Pass@1 45% 35% 45% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50% Pass@1 45% 40% 35% Adv"
+          },
+          {
+            "matched_text": "35%",
+            "snippet": "Average in terms of Pass@1. This indicates that although the theoretical upper bound of 3 Adversary Oracle DeiBase Average Augment 75% 75% Oracle Oracle 65% 65% 55% 55% Pass@1 45% 35% 45% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50% Pass@1 45% 40% 35% Adversa"
+          },
+          {
+            "matched_text": "45%",
+            "snippet": "age in terms of Pass@1. This indicates that although the theoretical upper bound of 3 Adversary Oracle DeiBase Average Augment 75% 75% Oracle Oracle 65% 65% 55% 55% Pass@1 45% 35% 45% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50% Pass@1 45% 40% 35% Adversary 3"
+          },
+          {
+            "matched_text": "25%",
+            "snippet": "This indicates that although the theoretical upper bound of 3 Adversary Oracle DeiBase Average Augment 75% 75% Oracle Oracle 65% 65% 55% 55% Pass@1 45% 35% 45% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50% Pass@1 45% 40% 35% Adversary 30% Adversary 25% 20% 1 2"
+          },
+          {
+            "matched_text": "35%",
+            "snippet": "indicates that although the theoretical upper bound of 3 Adversary Oracle DeiBase Average Augment 75% 75% Oracle Oracle 65% 65% 55% 55% Pass@1 45% 35% 45% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50% Pass@1 45% 40% 35% Adversary 30% Adversary 25% 20% 1 2 3 4"
+          },
+          {
+            "matched_text": "75%",
+            "snippet": "% 65% 55% 55% Pass@1 45% 35% 45% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50% Pass@1 45% 40% 35% Adversary 30% Adversary 25% 20% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (3) GPT-4.1 (4) Mixture Figure 1: Influence of ensem"
+          },
+          {
+            "matched_text": "80%",
+            "snippet": "% 55% 55% Pass@1 45% 35% 45% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50% Pass@1 45% 40% 35% Adversary 30% Adversary 25% 20% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (3) GPT-4.1 (4) Mixture Figure 1: Influence of ensemble"
+          },
+          {
+            "matched_text": "65%",
+            "snippet": "5% 35% 45% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50% Pass@1 45% 40% 35% Adversary 30% Adversary 25% 20% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (3) GPT-4.1 (4) Mixture Figure 1: Influence of ensemble size on the effect"
+          },
+          {
+            "matched_text": "70%",
+            "snippet": "5% 45% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50% Pass@1 45% 40% 35% Adversary 30% Adversary 25% 20% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (3) GPT-4.1 (4) Mixture Figure 1: Influence of ensemble size on the effectiven"
+          },
+          {
+            "matched_text": "60%",
+            "snippet": "5% Adversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50% Pass@1 45% 40% 35% Adversary 30% Adversary 25% 20% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (3) GPT-4.1 (4) Mixture Figure 1: Influence of ensemble size on the effectiveness"
+          },
+          {
+            "matched_text": "55%",
+            "snippet": "dversary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50% Pass@1 45% 40% 35% Adversary 30% Adversary 25% 20% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (3) GPT-4.1 (4) Mixture Figure 1: Influence of ensemble size on the effectiveness of e"
+          },
+          {
+            "matched_text": "50%",
+            "snippet": "sary Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50% Pass@1 45% 40% 35% Adversary 30% Adversary 25% 20% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (3) GPT-4.1 (4) Mixture Figure 1: Influence of ensemble size on the effectiveness of exist"
+          },
+          {
+            "matched_text": "Pass@1",
+            "snippet": "Adversary 25% 35% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (1) Gemini 2.5 Pro (2) Claude 3.7 Sonnet 75% 80% Oracle Oracle 65% 70% 60% 55% 50% Pass@1 45% 40% 35% Adversary 30% Adversary 25% 20% 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 Ensemble Size (N) Ensemble Size (N) (3) GPT-4.1 (4) Mixture Figure 1: Influence of ensemble size on the effectiveness of existing ens"
+          }
+        ]
+      },
+      "note": "Candidates and text matches are evidence aids, not proof of experimental use; verify entities and numeric claims in the paper's methods/experiments/results sections."
     },
     "2503.11651": {
       "pdf_path": "papers\\2503.11651.pdf",
@@ -507,15 +1578,426 @@
         "VGGSfM v2"
       ],
       "configured_dataset_mentions_found": [
+        "Co3Dv2",
+        "BlendMVS",
+        "DL3DV",
+        "MegaDepth",
+        "Kubric",
+        "WildRGB",
+        "ScanNet",
+        "HyperSim",
+        "Mapillary",
+        "Habitat",
+        "Replica",
+        "MVS-Synth",
+        "PointOdyssey",
+        "Virtual KITTI",
+        "Aria Synthetic Environments",
+        "Aria Digital Twin",
         "RealEstate10K",
-        "CO3Dv2",
         "ScanNet-1500",
-        "ETH3D",
-        "DTU"
+        "DTU",
+        "ETH3D"
       ],
       "configured_model_count": 4,
-      "configured_dataset_count": 6,
-      "note": "Mention checks are evidence aids, not proof of experimental use; review the cited paper sections/tables."
+      "configured_dataset_count": 21,
+      "configured_entity_evidence": {
+        "models": [
+          {
+            "entity": "VGGT",
+            "snippet": "VGGT: Visual Geometry Grounded Transformer Jianyuan Wang1,2 Minghao Chen1,2 Nikita Karaev1,2 Andrea Vedaldi1,2 Chr"
+          },
+          {
+            "entity": "DUSt3R",
+            "snippet": "geometry post-processing almost entirely. https://github.com/facebookresearch/vggt. Recent contributions like DUSt3R [129] and its evolution 1 MASt3R [62] have shown promising results in this direc- VGGT achieves state-of-the-"
+          },
+          {
+            "entity": "MASt3R",
+            "snippet": "ntirely. https://github.com/facebookresearch/vggt. Recent contributions like DUSt3R [129] and its evolution 1 MASt3R [62] have shown promising results in this direc- VGGT achieves state-of-the-art results across the board, tio"
+          },
+          {
+            "entity": "VGGSfM v2",
+            "snippet": "1 47.0 64.4 DUSt3R [129] 67.7 76.7 ∼7s Roma [33] 31.8 53.4 70.9 MASt3R [62] 76.4 81.8 ∼9s Ours 33.9 55.2 73.4 VGGSfM v2 [125] 78.9 83.4 ∼10s MV-DUSt3R [111] ‡ 71.3 69.5 ∼0.6s Table 4. Two-View matching comparison on ScanNet-1500"
+          }
+        ],
+        "datasets": [
+          {
+            "entity": "Co3Dv2",
+            "snippet": "large and the discrepancy between the predicted depth ˆDi and the diverse collection of datasets, including: Co3Dv2 [88], ground-truth depth Di with the predicted uncertainty map BlendMVS [146], DL3DV [69], MegaDepth [64], ˆΣ"
+          },
+          {
+            "entity": "BlendMVS",
+            "snippet": "erse collection of datasets, including: Co3Dv2 [88], ground-truth depth Di with the predicted uncertainty map BlendMVS [146], DL3DV [69], MegaDepth [64], ˆΣDi . Differently from DUSt3R, we also apply a gradient- Kubric [41], Wil"
+          },
+          {
+            "entity": "DL3DV",
+            "snippet": "of datasets, including: Co3Dv2 [88], ground-truth depth Di with the predicted uncertainty map BlendMVS [146], DL3DV [69], MegaDepth [64], ˆΣDi . Differently from DUSt3R, we also apply a gradient- Kubric [41], WildRGB [135], S"
+          },
+          {
+            "entity": "MegaDepth",
+            "snippet": "including: Co3Dv2 [88], ground-truth depth Di with the predicted uncertainty map BlendMVS [146], DL3DV [69], MegaDepth [64], ˆΣDi . Differently from DUSt3R, we also apply a gradient- Kubric [41], WildRGB [135], ScanNet [18], Hyp"
+          },
+          {
+            "entity": "Kubric",
+            "snippet": "nty map BlendMVS [146], DL3DV [69], MegaDepth [64], ˆΣDi . Differently from DUSt3R, we also apply a gradient- Kubric [41], WildRGB [135], ScanNet [18], Hyperbased term, which is widely used in monocular depth es- Sim [89], Map"
+          },
+          {
+            "entity": "WildRGB",
+            "snippet": "MVS [146], DL3DV [69], MegaDepth [64], ˆΣDi . Differently from DUSt3R, we also apply a gradient- Kubric [41], WildRGB [135], ScanNet [18], Hyperbased term, which is widely used in monocular depth es- Sim [89], Mapillary [71], H"
+          },
+          {
+            "entity": "ScanNet",
+            "snippet": "V [69], MegaDepth [64], ˆΣDi . Differently from DUSt3R, we also apply a gradient- Kubric [41], WildRGB [135], ScanNet [18], Hyperbased term, which is widely used in monocular depth es- Sim [89], Mapillary [71], Habitat [107], R"
+          },
+          {
+            "entity": "HyperSim",
+            "snippet": "it Kumar, Miguel Angel Bautista, Nathan Paczan, Russ arXiv:2404.15259, 2024. 13 Webb, and Joshua M. Susskind. Hypersim: A photorealis- [102] Cameron Smith, David Charatan, Ayush Tewari, and Vintic synthetic dataset for holistic"
+          },
+          {
+            "entity": "Mapillary",
+            "snippet": "ric [41], WildRGB [135], ScanNet [18], Hyperbased term, which is widely used in monocular depth es- Sim [89], Mapillary [71], Habitat [107], Replica [104], timation. Hence, the depth loss is Ldepth = PNi=1 ∥ΣDi ⊙ MVS-Synth [50],"
+          },
+          {
+            "entity": "Habitat",
+            "snippet": "B [135], ScanNet [18], Hyperbased term, which is widely used in monocular depth es- Sim [89], Mapillary [71], Habitat [107], Replica [104], timation. Hence, the depth loss is Ldepth = PNi=1 ∥ΣDi ⊙ MVS-Synth [50], PointOdyssey ["
+          },
+          {
+            "entity": "Replica",
+            "snippet": "t [18], Hyperbased term, which is widely used in monocular depth es- Sim [89], Mapillary [71], Habitat [107], Replica [104], timation. Hence, the depth loss is Ldepth = PNi=1 ∥ΣDi ⊙ MVS-Synth [50], PointOdyssey [159], Virtual K"
+          },
+          {
+            "entity": "MVS-Synth",
+            "snippet": "[89], Mapillary [71], Habitat [107], Replica [104], timation. Hence, the depth loss is Ldepth = PNi=1 ∥ΣDi ⊙ MVS-Synth [50], PointOdyssey [159], Virtual KITTI [7], (ˆDi −Di)∥+ ∥ΣDi ⊙(∇ˆDi −∇Di)∥−α log ΣDi , where ⊙ Aria Syntheti"
+          },
+          {
+            "entity": "PointOdyssey",
+            "snippet": "[71], Habitat [107], Replica [104], timation. Hence, the depth loss is Ldepth = PNi=1 ∥ΣDi ⊙ MVS-Synth [50], PointOdyssey [159], Virtual KITTI [7], (ˆDi −Di)∥+ ∥ΣDi ⊙(∇ˆDi −∇Di)∥−α log ΣDi , where ⊙ Aria Synthetic Environments [82]"
+          },
+          {
+            "entity": "Virtual KITTI",
+            "snippet": ", Replica [104], timation. Hence, the depth loss is Ldepth = PNi=1 ∥ΣDi ⊙ MVS-Synth [50], PointOdyssey [159], Virtual KITTI [7], (ˆDi −Di)∥+ ∥ΣDi ⊙(∇ˆDi −∇Di)∥−α log ΣDi , where ⊙ Aria Synthetic Environments [82], Aria Digital Twin ["
+          },
+          {
+            "entity": "Aria Synthetic Environments",
+            "snippet": "i ⊙ MVS-Synth [50], PointOdyssey [159], Virtual KITTI [7], (ˆDi −Di)∥+ ∥ΣDi ⊙(∇ˆDi −∇Di)∥−α log ΣDi , where ⊙ Aria Synthetic Environments [82], Aria Digital Twin [82], is the channel-broadcast element-wise product. The point and a synthetic datase"
+          },
+          {
+            "entity": "Aria Digital Twin",
+            "snippet": "159], Virtual KITTI [7], (ˆDi −Di)∥+ ∥ΣDi ⊙(∇ˆDi −∇Di)∥−α log ΣDi , where ⊙ Aria Synthetic Environments [82], Aria Digital Twin [82], is the channel-broadcast element-wise product. The point and a synthetic dataset of artist-created asse"
+          },
+          {
+            "entity": "Synthetic artist-created assets similar to Objaverse",
+            "snippet": null
+          },
+          {
+            "entity": "RealEstate10K",
+            "snippet": "first evaluate our method on the CO3Dv2 [88] and scene are not affected at all, meaning that any such variant RealEstate10K [161] datasets for camera pose estimation, is a legitimate result of 3D reconstruction. We remove this as sho"
+          },
+          {
+            "entity": "ScanNet-1500",
+            "snippet": "3.4 VGGSfM v2 [125] 78.9 83.4 ∼10s MV-DUSt3R [111] ‡ 71.3 69.5 ∼0.6s Table 4. Two-View matching comparison on ScanNet-1500 [18, CUT3R [127] ‡ 75.3 82.8 ∼0.6s 92]. Although our tracking head is not specialized for the two- FLARE [156"
+          },
+          {
+            "entity": "DTU",
+            "snippet": "ethods from visual geometry optimization like BA. Specifically, refining Table 2. Dense MVS Estimation on the DTU [51] Dataset. the predicted camera poses and tracks with BA further im-Methods operating with known ground-tr"
+          },
+          {
+            "entity": "ETH3D",
+            "snippet": "is still room for improvement since post-optimization still brings benefits. Table 3. Point Map Estimation on ETH3D [97]. DUSt3R and MASt3R use global alignment while ours is feed-forward and, 4.2. Multi-view Depth Estimation"
+          }
+        ],
+        "tasks": [
+          {
+            "entity": "3D-reconstruction",
+            "snippet": null
+          },
+          {
+            "entity": "camera-pose-estimation",
+            "snippet": null
+          },
+          {
+            "entity": "multi-view-depth-estimation",
+            "snippet": null
+          },
+          {
+            "entity": "3D-point-tracking",
+            "snippet": null
+          }
+        ],
+        "methods": [
+          {
+            "entity": "feed-forward-transformer",
+            "snippet": null
+          },
+          {
+            "entity": "multi-view-geometry",
+            "snippet": null
+          },
+          {
+            "entity": "3D-vision",
+            "snippet": null
+          }
+        ]
+      },
+      "discovered_candidates_for_manual_review": {
+        "benchmark_or_dataset_candidates": [
+          {
+            "matched_text": "Co3Dv2",
+            "snippet": "ty loss [59, 75] weighing Training Data. The model was trained using a large and the discrepancy between the predicted depth ˆDi and the diverse collection of datasets, including: Co3Dv2 [88], ground-truth depth Di with the predicted uncertainty map BlendMVS [146], DL3DV [69], MegaDepth [64], ˆΣDi . Differently from DUSt3R, we also apply a gradient- Kubric [41], WildRGB [135], ScanNet [18], Hyperbased t"
+          },
+          {
+            "matched_text": "ScanNet",
+            "snippet": "truth depth Di with the predicted uncertainty map BlendMVS [146], DL3DV [69], MegaDepth [64], ˆΣDi . Differently from DUSt3R, we also apply a gradient- Kubric [41], WildRGB [135], ScanNet [18], Hyperbased term, which is widely used in monocular depth es- Sim [89], Mapillary [71], Habitat [107], Replica [104], timation. Hence, the depth loss is Ldepth = PNi=1 ∥ΣDi ⊙ MVS-Synth [50], PointOdyssey [159], Vir"
+          },
+          {
+            "matched_text": "CO3Dv2",
+            "snippet": ". 4.1. Camera Pose EstimationGround Truth Coordinate Normalization. If we scale a scene or change its global reference frame, the images of the We first evaluate our method on the CO3Dv2 [88] and scene are not affected at all, meaning that any such variant RealEstate10K [161] datasets for camera pose estimation, is a legitimate result of 3D reconstruction. We remove this as shown in Tab. 1. Following [1"
+          },
+          {
+            "matched_text": "RealEstate10K",
+            "snippet": "le a scene or change its global reference frame, the images of the We first evaluate our method on the CO3Dv2 [88] and scene are not affected at all, meaning that any such variant RealEstate10K [161] datasets for camera pose estimation, is a legitimate result of 3D reconstruction. We remove this as shown in Tab. 1. Following [124], we randomly select 10 ambiguity by normalizing the data, thus making a canoni-"
+          },
+          {
+            "matched_text": "CO3Dv2",
+            "snippet": "he relative angular errors in rotation and pute the average Euclidean distance of all 3D points in the translation, respectively, for each image pair. These angu- 6 Re10K (unseen) CO3Dv2 Method AUC@5 ↑ AUC@10 ↑ AUC@20 ↑ Methods Time AUC@30 ↑ AUC@30 ↑ SuperGlue [92] 16.2 33.8 51.8 Colmap+SPSG [92] 45.2 25.3 ∼15s LoFTR [105] 22.1 40.8 57.6 PixSfM [66] 49.4 30.1 > 20s DKM [32] 29.4 50.7 68.3 PoseDiff [124]"
+          },
+          {
+            "matched_text": "ScanNet-1500",
+            "snippet": "7s Roma [33] 31.8 53.4 70.9 MASt3R [62] 76.4 81.8 ∼9s Ours 33.9 55.2 73.4 VGGSfM v2 [125] 78.9 83.4 ∼10s MV-DUSt3R [111] ‡ 71.3 69.5 ∼0.6s Table 4. Two-View matching comparison on ScanNet-1500 [18, CUT3R [127] ‡ 75.3 82.8 ∼0.6s 92]. Although our tracking head is not specialized for the two- FLARE [156] ‡ 78.8 83.3 ∼0.5s view setting, it outperforms the state-of-the-art two-view matching Fast3R [141] ‡ 72.7 82"
+          },
+          {
+            "matched_text": "RealEstate10K",
+            "snippet": "her is better). Ours (Feed-Forward) 85.3 88.2 ∼0.2s Ours (with BA) 93.5 91.8 ∼1.8s ods across all metrics on both datasets, including those that Table 1. Camera Pose Estimation on RealEstate10K [161] and employ computationally expensive post-optimization steps, CO3Dv2 [88] with 10 random frames. All metrics the higher the such as Global Alignment for DUSt3R/MASt3R and Bunbetter. None of the methods were traine"
+          },
+          {
+            "matched_text": "CO3Dv2",
+            "snippet": "ods across all metrics on both datasets, including those that Table 1. Camera Pose Estimation on RealEstate10K [161] and employ computationally expensive post-optimization steps, CO3Dv2 [88] with 10 random frames. All metrics the higher the such as Global Alignment for DUSt3R/MASt3R and Bunbetter. None of the methods were trained on the Re10K dataset. dle Adjustment for VGGSfM, typically requiring more"
+          },
+          {
+            "matched_text": "RealEstate10K",
+            "snippet": "VSNet [144] 0.396 0.527 0.462 ✓ CIDER [139] 0.417 0.437 0.427 Furthermore, our model’s performance advantage is even ✓ PatchmatchNet [121] 0.427 0.377 0.417 more pronounced on the RealEstate10K dataset, which ✓ MASt3R [62] 0.403 0.344 0.374 none of the methods presented in Tab. 1 were trained on. ✓ GeoMVSNet [157] 0.331 0.259 0.295 This validates the superior generalization of VGGT. ✗ DUSt3R [129] 2.677 0.805"
+          },
+          {
+            "matched_text": "DTU",
+            "snippet": "n ✗ Ours 0.389 0.374 0.382 further by combining it with optimization methods from visual geometry optimization like BA. Specifically, refining Table 2. Dense MVS Estimation on the DTU [51] Dataset. the predicted camera poses and tracks with BA further im-Methods operating with known ground-truth camera are in the top proves accuracy. Note that our method directly predictspart of the table, while the"
+          },
+          {
+            "matched_text": "ETH3D",
+            "snippet": "(Depth + Cam) 0.873 0.482 0.677 ∼0.2s are feed-forward or not), there is still room for improvement since post-optimization still brings benefits. Table 3. Point Map Estimation on ETH3D [97]. DUSt3R and MASt3R use global alignment while ours is feed-forward and, 4.2. Multi-view Depth Estimation hence, much faster. The row Ours (Point) indicates the results Following MASt3R [62], we further evaluate our"
+          },
+          {
+            "matched_text": "DTU",
+            "snippet": "evaluate our multi-using the point map head directly, while Ours (Depth + Cam) denotes constructing point clouds from the depth map head com- view depth estimation results on the DTU [51] dataset. We bined with the camera head. report the standard DTU metrics, including Accuracy (the smallest Euclidean distance from the prediction to ground truth), Completeness (the smallest Euclidean distance from"
+          },
+          {
+            "matched_text": "DTU",
+            "snippet": "pth + Cam) denotes constructing point clouds from the depth map head com- view depth estimation results on the DTU [51] dataset. We bined with the camera head. report the standard DTU metrics, including Accuracy (the smallest Euclidean distance from the prediction to ground truth), Completeness (the smallest Euclidean distance from lar errors are then thresholded to determine the accuracy the ground"
+          },
+          {
+            "matched_text": "Co3Dv2",
+            "snippet": "are the only two methods operating without the knowling thresholds. The (learnable) methods in Tab. 1 have been edge of ground truth cameras. MASt3R derives depth maps trained on Co3Dv2 and not on RealEstate10K. Our feed- by triangulating matches using the ground truth cameras. forward model consistently outperforms competing meth- Meanwhile, deep multi-view stereo methods like GeoMVS- 7 Ours +Ours CoT"
+          },
+          {
+            "matched_text": "RealEstate10K",
+            "snippet": "methods operating without the knowling thresholds. The (learnable) methods in Tab. 1 have been edge of ground truth cameras. MASt3R derives depth maps trained on Co3Dv2 and not on RealEstate10K. Our feed- by triangulating matches using the ground truth cameras. forward model consistently outperforms competing meth- Meanwhile, deep multi-view stereo methods like GeoMVS- 7 Ours +Ours CoTracker Figure 5. Visualiz"
+          },
+          {
+            "matched_text": "ETH3D",
+            "snippet": "tom: We finetune the backbone of VGGT to enhance a dynamic point tracker CoTracker [56], which processes sequential inputs. Net use ground truth cameras to construct cost volumes. ETH3D Dataset Acc.↓ Comp.↓ Overall↓ Our method substantially outperforms DUSt3R, reduc- Cross-Attention 1.287 0.835 1.061 ing the Overall score from 1.741 to 0.382. More impor- Global Self-Attention Only 1.032 0.621 0.827 tan"
+          },
+          {
+            "matched_text": "ETH3D",
+            "snippet": "parable to methods that know Alternating-Attention 0.901 0.518 0.709 ground-truth cameras at test time. The significant perfor- Table 5. Ablation Study for Transformer Backbone on ETH3D.mance gains can likely be attributed to our model’s multi- We compare our alternating-attention architecture against two image training scheme that teaches it to reason about multivariants: one using only global self-at"
+          },
+          {
+            "matched_text": "ETH3D",
+            "snippet": "Point Map Estimation with repeating or homogeneous textures like deserts. We also compare the accuracy of our predicted point cloud 4.4. Image Matchingto DUSt3R and MASt3R on the ETH3D [97] dataset. For each scene, we randomly sample 10 frames. The pre- Two-view image matching is a widely-explored topic [68, dicted point cloud is aligned to the ground truth using the 93, 105] in computer vision. It re"
+          },
+          {
+            "matched_text": "ScanNet",
+            "snippet": "alized tance) for point map estimation. As shown in Tab. 3, al- for this task. We follow the standard protocol [33, 93] on though DUSt3R and MASt3R conduct expensive optimiza- the ScanNet dataset [18] and report the results in Tab. 4. tion (global alignment–—around 10 seconds per scene), For each image pair, we extract the matches and use them our method still outperforms them significantly in a simple t"
+          },
+          {
+            "matched_text": "ETH3D",
+            "snippet": "ion Study for Multi-task Learning, which shows that simultaneous training with camera, depth and track estimation Prediction yields the highest accuracy in point map estimation on ETH3D. Figure 6. Qualitative Examples of Novel View Synthesis. The against two alternative attention architectures: (a) global top row shows the input images, the middle row displays the self-attention only, and (b) cross-att"
+          },
+          {
+            "matched_text": "ScanNet-1500",
+            "snippet": "ks to their simplicity, high same training split as DUSt3R and MASt3R. In the main capacity, flexibility, and ability to capture long-range depaper, to ensure a fair comparison on ScanNet-1500, we ex- pendencies. clude the corresponding ScanNet scenes from our training. DeiT [114] demonstrated that Vision Transformers can Results. Table 10 contains the results of our evaluation. Al- be effectively trained on"
+          },
+          {
+            "matched_text": "ScanNet",
+            "snippet": "R and MASt3R. In the main capacity, flexibility, and ability to capture long-range depaper, to ensure a fair comparison on ScanNet-1500, we ex- pendencies. clude the corresponding ScanNet scenes from our training. DeiT [114] demonstrated that Vision Transformers can Results. Table 10 contains the results of our evaluation. Al- be effectively trained on datasets like ImageNet using though phototourism dat"
+          },
+          {
+            "matched_text": "Scannet",
+            "snippet": "renev, Arthur Hinsvark, [18] Angela Dai, Angel X Chang, Manolis Savva, Maciej Hal- Arun Rao, Aston Zhang, Aur´elien Rodriguez, Austen ber, Thomas Funkhouser, and Matthias Nießner. Scannet: Gregerson, Ava Spataru, Baptiste Rozi`ere, Bethany Biron, Richly-annotated 3d reconstructions of indoor scenes. In Binh Tang, Bobbie Chern, Charlotte Caucheteux, Chaya Proceedings of the IEEE conference on computer vis"
+          }
+        ],
+        "metric_claim_candidates": [
+          {
+            "matched_text": "accuracy",
+            "snippet": "127, 141, 156] explore replacing DUSt3R’sstrate that learning to predict these interrelated 3D attributes test-time optimization with neural networks, though theseenhances overall accuracy despite potential redundancies. attempts achieve only suboptimal or comparable perfor-At the same time, we show that, during inference, we can mance to DUSt3R. Instead, VGGT outperforms DUSt3Rderive the point maps from"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "we can mance to DUSt3R. Instead, VGGT outperforms DUSt3Rderive the point maps from separately predicted depth and and MASt3R by a large margin.camera parameters, obtaining better accuracy compared to directly using the dedicated point map head. Tracking-Any-Point was first introduced in Particle To summarize, we make the following contributions: (1) Video [91] and revived by PIPs [44] during the deep lea"
+          },
+          {
+            "matched_text": "AUC@30",
+            "snippet": "ambiguity by normalizing the data, thus making a canoni- images per scene and evaluate them using the standard metcal choice and task the transformer to output this particular ric AUC@30, which combines RRA and RTA. RRA (Relavariant. We follow [129] and, first, express all quantities in tive Rotation Accuracy) and RTA (Relative Translation Acthe coordinate frame of the first camera g1. Then, we com- cur"
+          },
+          {
+            "matched_text": "Accuracy",
+            "snippet": "ce and task the transformer to output this particular ric AUC@30, which combines RRA and RTA. RRA (Relavariant. We follow [129] and, first, express all quantities in tive Rotation Accuracy) and RTA (Relative Translation Acthe coordinate frame of the first camera g1. Then, we com- curacy) calculate the relative angular errors in rotation and pute the average Euclidean distance of all 3D points in the trans"
+          },
+          {
+            "matched_text": "AUC@5",
+            "snippet": "gular errors in rotation and pute the average Euclidean distance of all 3D points in the translation, respectively, for each image pair. These angu- 6 Re10K (unseen) CO3Dv2 Method AUC@5 ↑ AUC@10 ↑ AUC@20 ↑ Methods Time AUC@30 ↑ AUC@30 ↑ SuperGlue [92] 16.2 33.8 51.8 Colmap+SPSG [92] 45.2 25.3 ∼15s LoFTR [105] 22.1 40.8 57.6 PixSfM [66] 49.4 30.1 > 20s DKM [32] 29.4 50.7 68.3 PoseDiff [124] 48.0 66.5 ∼7"
+          },
+          {
+            "matched_text": "AUC@10",
+            "snippet": "rors in rotation and pute the average Euclidean distance of all 3D points in the translation, respectively, for each image pair. These angu- 6 Re10K (unseen) CO3Dv2 Method AUC@5 ↑ AUC@10 ↑ AUC@20 ↑ Methods Time AUC@30 ↑ AUC@30 ↑ SuperGlue [92] 16.2 33.8 51.8 Colmap+SPSG [92] 45.2 25.3 ∼15s LoFTR [105] 22.1 40.8 57.6 PixSfM [66] 49.4 30.1 > 20s DKM [32] 29.4 50.7 68.3 PoseDiff [124] 48.0 66.5 ∼7s CasMTR"
+          },
+          {
+            "matched_text": "AUC@20",
+            "snippet": "otation and pute the average Euclidean distance of all 3D points in the translation, respectively, for each image pair. These angu- 6 Re10K (unseen) CO3Dv2 Method AUC@5 ↑ AUC@10 ↑ AUC@20 ↑ Methods Time AUC@30 ↑ AUC@30 ↑ SuperGlue [92] 16.2 33.8 51.8 Colmap+SPSG [92] 45.2 25.3 ∼15s LoFTR [105] 22.1 40.8 57.6 PixSfM [66] 49.4 30.1 > 20s DKM [32] 29.4 50.7 68.3 PoseDiff [124] 48.0 66.5 ∼7s CasMTR [9] 27.1"
+          },
+          {
+            "matched_text": "AUC@30",
+            "snippet": "verage Euclidean distance of all 3D points in the translation, respectively, for each image pair. These angu- 6 Re10K (unseen) CO3Dv2 Method AUC@5 ↑ AUC@10 ↑ AUC@20 ↑ Methods Time AUC@30 ↑ AUC@30 ↑ SuperGlue [92] 16.2 33.8 51.8 Colmap+SPSG [92] 45.2 25.3 ∼15s LoFTR [105] 22.1 40.8 57.6 PixSfM [66] 49.4 30.1 > 20s DKM [32] 29.4 50.7 68.3 PoseDiff [124] 48.0 66.5 ∼7s CasMTR [9] 27.1 47.0 64.4 DUSt3R [129]"
+          },
+          {
+            "matched_text": "AUC@30",
+            "snippet": "clidean distance of all 3D points in the translation, respectively, for each image pair. These angu- 6 Re10K (unseen) CO3Dv2 Method AUC@5 ↑ AUC@10 ↑ AUC@20 ↑ Methods Time AUC@30 ↑ AUC@30 ↑ SuperGlue [92] 16.2 33.8 51.8 Colmap+SPSG [92] 45.2 25.3 ∼15s LoFTR [105] 22.1 40.8 57.6 PixSfM [66] 49.4 30.1 > 20s DKM [32] 29.4 50.7 68.3 PoseDiff [124] 48.0 66.5 ∼7s CasMTR [9] 27.1 47.0 64.4 DUSt3R [129] 67.7 76."
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "le 2. Dense MVS Estimation on the DTU [51] Dataset. the predicted camera poses and tracks with BA further im-Methods operating with known ground-truth camera are in the top proves accuracy. Note that our method directly predictspart of the table, while the bottom part contains the methods that do not know the ground-truth camera. close-to-accurate point/depth maps, which can serve as a good initialization"
+          },
+          {
+            "matched_text": "Accuracy",
+            "snippet": "tructing point clouds from the depth map head com- view depth estimation results on the DTU [51] dataset. We bined with the camera head. report the standard DTU metrics, including Accuracy (the smallest Euclidean distance from the prediction to ground truth), Completeness (the smallest Euclidean distance from lar errors are then thresholded to determine the accuracy the ground truth to prediction), and th"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "Accuracy (the smallest Euclidean distance from the prediction to ground truth), Completeness (the smallest Euclidean distance from lar errors are then thresholded to determine the accuracy the ground truth to prediction), and their average Overall scores. AUC is the area under the accuracy-threshold curve (i.e., Chamfer distance). In Tab. 2, DUSt3R and our VGGT of the minimum values between RRA and RTA ac"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "lest Euclidean distance from lar errors are then thresholded to determine the accuracy the ground truth to prediction), and their average Overall scores. AUC is the area under the accuracy-threshold curve (i.e., Chamfer distance). In Tab. 2, DUSt3R and our VGGT of the minimum values between RRA and RTA across vary- are the only two methods operating without the knowling thresholds. The (learnable) methods"
+          },
+          {
+            "matched_text": "Chamfer distance",
+            "snippet": "errors are then thresholded to determine the accuracy the ground truth to prediction), and their average Overall scores. AUC is the area under the accuracy-threshold curve (i.e., Chamfer distance). In Tab. 2, DUSt3R and our VGGT of the minimum values between RRA and RTA across vary- are the only two methods operating without the knowling thresholds. The (learnable) methods in Tab. 1 have been edge of ground trut"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "out-of-domain examples, such as oil paintings, non-overlapping frames, and scenes4.3. Point Map Estimation with repeating or homogeneous textures like deserts. We also compare the accuracy of our predicted point cloud 4.4. Image Matchingto DUSt3R and MASt3R on the ETH3D [97] dataset. For each scene, we randomly sample 10 frames. The pre- Two-view image matching is a widely-explored topic [68, dicted point"
+          },
+          {
+            "matched_text": "Accuracy",
+            "snippet": "point tracking, which is restricted to only two views, filtering out invalid points using the official masks. We re- and hence a suitable evaluation benchmark to measure our port Accuracy, Completeness, and Overall (Chamfer dis- tracking accuracy, even though our model is not specialized tance) for point map estimation. As shown in Tab. 3, al- for this task. We follow the standard protocol [33, 93] on th"
+          },
+          {
+            "matched_text": "Chamfer",
+            "snippet": "to only two views, filtering out invalid points using the official masks. We re- and hence a suitable evaluation benchmark to measure our port Accuracy, Completeness, and Overall (Chamfer dis- tracking accuracy, even though our model is not specialized tance) for point map estimation. As shown in Tab. 3, al- for this task. We follow the standard protocol [33, 93] on though DUSt3R and MASt3R conduct expen"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "tering out invalid points using the official masks. We re- and hence a suitable evaluation benchmark to measure our port Accuracy, Completeness, and Overall (Chamfer dis- tracking accuracy, even though our model is not specialized tance) for point map estimation. As shown in Tab. 3, al- for this task. We follow the standard protocol [33, 93] on though DUSt3R and MASt3R conduct expensive optimiza- the Scan"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "ed feed-forward regime at only 0.2 seconds per reconstruction. to a relative camera pose. The final metric is the relative Meanwhile, compared to directly using our estimated pose accuracy, measured by AUC. For evaluation, we use point maps, we found that the predictions from our depth ALIKED [158] to detect keypoints, treating them as query and camera heads (i.e., unprojecting the predicted depth points"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "points yq. These are then passed to our tracking branch T maps to 3D using the predicted camera parameters) yield to find correspondences in the second frame. We adopt the higher accuracy. We attribute this to the benefits of de- evaluation hyperparameters (e.g., the number of matches, composing a complex task (point map estimation) into sim- RANSAC thresholds) from Roma [33]. Despite not being pler subp"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "th map and camera prediction), even explicitly trained for two-view matching, Tab. 4 shows that though camera, depth maps, and point maps are jointly su- VGGT achieves the highest accuracy among all baselines. pervised during training. 4.5. Ablation Studies We present a qualitative comparison with DUSt3R on inthe-wild scenes in Fig. 3 and further examples in Fig. 4. Feature Backbone. We first validate the"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "18 0.709 Ground Truth Table 6. Ablation Study for Multi-task Learning, which shows that simultaneous training with camera, depth and track estimation Prediction yields the highest accuracy in point map estimation on ETH3D. Figure 6. Qualitative Examples of Novel View Synthesis. The against two alternative attention architectures: (a) global top row shows the input images, the middle row displays the self-"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "ames grows. The hyperparameters such as the hidden dimension and the number of heads are kept the same. Point Table 7. Quantitative comparisons for view synthesis onmap estimation accuracy is chosen as the evaluation metric GSO [28] dataset. Finetuning VGGT for feed-forward novel view for our ablation study, as it reflects the model’s joint undersynthesis, it demonstrates competitive performance even with"
+          },
+          {
+            "matched_text": "20%",
+            "snippet": "g camera extrinsic and intrinsic parameters for the input in Tab. 5 demonstrate that our Alternating-Attention archi- images. Note that ∗indicates using a small training set (only 20%). tecture outperforms both baseline variants by a clear margin. Additionally, our other preliminary exploratory experiments consistently showed that architectures using crossclosely, e.g., using 4 input views and adopti"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "rget views, are concatenated and processed produce point maps). As shown in Tab. 6, there is a no- by the AA transformer. Subsequently, a DPT head is used ticeable decrease in the accuracy of point map estimation to regress the RGB colors for the target views. It is imporwhen training without camera, depth, or track estimation. tant to note that we do not input the Pl¨ucker rays for the Notably, incorpora"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "hat we do not input the Pl¨ucker rays for the Notably, incorporating camera parameter estimation clearly source images. Hence, the model is not given the camera enhances point map accuracy, whereas depth estimation parameters for these input frames. contributes only marginal improvements. LVSM was trained on the Objaverse dataset [20]. We use a similar internal dataset of approximately 20% the size 4.6. F"
+          },
+          {
+            "matched_text": "20%",
+            "snippet": "ation parameters for these input frames. contributes only marginal improvements. LVSM was trained on the Objaverse dataset [20]. We use a similar internal dataset of approximately 20% the size 4.6. Finetuning for Downstream Tasks of Objaverse. Further details on training and evaluation can We now show that the VGGT pre-trained feature extractor be found in [53]. As shown in Tab. 7, despite not requir"
+          },
+          {
+            "matched_text": "Accuracy",
+            "snippet": "ly output the target image. However, we do not assume Following standard practices, we report these point-tracking known camera parameters for the input frames. metrics: Occlusion Accuracy (OA), which comprises the bi- We follow the training and evaluation protocol of LVSM nary accuracy of occlusion predictions; δvisavg, comprising the 9 Kinetics RGB-S DAVIS Input Frames 1 2 4 8 10 20 50 100 200 Method Ti"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "point-tracking known camera parameters for the input frames. metrics: Occlusion Accuracy (OA), which comprises the bi- We follow the training and evaluation protocol of LVSM nary accuracy of occlusion predictions; δvisavg, comprising the 9 Kinetics RGB-S DAVIS Input Frames 1 2 4 8 10 20 50 100 200 Method Time (s) 0.04 0.05 0.07 0.11 0.14 0.31 1.04 3.12 8.75 AJ δvisavg OA AJ δvisavg OA AJ δvisavg OA Mem."
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "ent branch combinations a certain pixel threshold; and Average Jaccard (AJ), mea- depending on their specific requirements and available resuring tracking and occlusion prediction accuracy together. sources. The camera head is lightweight, typically account- We adapt the state-of-the-art CoTracker2 model [57] by ing for approximately 5% of the runtime and about 2% of substituting its backbone with our pre"
+          },
+          {
+            "matched_text": "5%",
+            "snippet": "nd occlusion prediction accuracy together. sources. The camera head is lightweight, typically account- We adapt the state-of-the-art CoTracker2 model [57] by ing for approximately 5% of the runtime and about 2% of substituting its backbone with our pretrained feature back- the GPU memory used by the feature backbone. A DPT bone. This is necessary because VGGT is trained on un- head uses an average o"
+          },
+          {
+            "matched_text": "2%",
+            "snippet": "racy together. sources. The camera head is lightweight, typically account- We adapt the state-of-the-art CoTracker2 model [57] by ing for approximately 5% of the runtime and about 2% of substituting its backbone with our pretrained feature back- the GPU memory used by the feature backbone. A DPT bone. This is necessary because VGGT is trained on un- head uses an average of 0.03 seconds and 0.2 GB GP"
+          },
+          {
+            "matched_text": "AUC@3",
+            "snippet": "ataset (each dataset has a different yet approximately similar weight, as in [129]), and from the 11 dataset, we then sample a random scene (uniformly). Dur- Method Test-time Opt. AUC@3◦ AUC@5◦ AUC@10◦ Runtime ing the training phase, we select between 2 and 24 frames COLMAPPixSfM (SIFT(SIFT+NN)+ NN) [66][94] ✓✓ 23.5825.54 32.6634.80 44.7946.73 >10s>20s ✓ PixSfM (LoFTR) [66] 44.06 56.16 69.61 >20sper sc"
+          },
+          {
+            "matched_text": "AUC@5",
+            "snippet": "(each dataset has a different yet approximately similar weight, as in [129]), and from the 11 dataset, we then sample a random scene (uniformly). Dur- Method Test-time Opt. AUC@3◦ AUC@5◦ AUC@10◦ Runtime ing the training phase, we select between 2 and 24 frames COLMAPPixSfM (SIFT(SIFT+NN)+ NN) [66][94] ✓✓ 23.5825.54 32.6634.80 44.7946.73 >10s>20s ✓ PixSfM (LoFTR) [66] 44.06 56.16 69.61 >20sper scene whi"
+          },
+          {
+            "matched_text": "AUC@10",
+            "snippet": "ataset has a different yet approximately similar weight, as in [129]), and from the 11 dataset, we then sample a random scene (uniformly). Dur- Method Test-time Opt. AUC@3◦ AUC@5◦ AUC@10◦ Runtime ing the training phase, we select between 2 and 24 frames COLMAPPixSfM (SIFT(SIFT+NN)+ NN) [66][94] ✓✓ 23.5825.54 32.6634.80 44.7946.73 >10s>20s ✓ PixSfM (LoFTR) [66] 44.06 56.16 69.61 >20sper scene while maint"
+          },
+          {
+            "matched_text": "AUC@10",
+            "snippet": "mes, and retains correspon- methods, our VGGT’s feed-forward performance is on par dences where reprojected depths match target depth maps. with the state-of-the-art VGGSfMv2 with AUC@10 of Frames with low similarity to the query frame are excluded 71.26 versus 76.82, while being significantly faster (0.2 during batch sampling. In rare cases with no valid corre- vs. 10 seconds per scene). Remarkably, VG"
+          },
+          {
+            "matched_text": "accuracy",
+            "snippet": "s with no valid corre- vs. 10 seconds per scene). Remarkably, VGGT outperspondences, the tracking loss is omitted. forms both MASt3R [62] and DUSt3R [129] significantly across all accuracy thresholds while being much faster. This C. Additional Experiments is because MASt3R’s and DUSt3R’s feed-forward predictions can only process pairs of frames and, hence, require aCamera Pose Estimation on IMC We also ev"
+          },
+          {
+            "matched_text": "AUC@10",
+            "snippet": ", a camera pose justment, VGGT + BA further improves drastically, achiev-estimation benchmark focusing on phototourism data. Until ing state-of-the-art performance on IMC, raising AUC@10recently, the benchmark was dominated by classical increfrom 71.26 to 84.91, and raising AUC@3 from 39.23 tomental SfM methods [94]. 66.37. Note that our model directly predicts 3D points, Baselines. We evaluate two flav"
+          },
+          {
+            "matched_text": "AUC@3",
+            "snippet": "ocusing on phototourism data. Until ing state-of-the-art performance on IMC, raising AUC@10recently, the benchmark was dominated by classical increfrom 71.26 to 84.91, and raising AUC@3 from 39.23 tomental SfM methods [94]. 66.37. Note that our model directly predicts 3D points, Baselines. We evaluate two flavors of our model: VGGT which can serve as the initialization for BA. This elimiand VGGT + BA."
+          },
+          {
+            "matched_text": "7 X",
+            "snippet": "arXiv:1906.05797, 2019. 6 the IEEE/CVF conference on computer vision and pattern [105] Jiaming Sun, Zehong Shen, Yuang Wang, Hujun Bao, and recognition, pages 4938–4947, 2020. 2, 7 Xiaowei Zhou. Loftr: Detector-free local feature matching [93] Paul-Edouard Sarlin, Daniel DeTone, Tomasz Malisiewicz, with transformers. In Proceedings of the IEEE/CVF conand Andrew Rabinovich. SuperGlue: learning featur"
+          }
+        ]
+      },
+      "note": "Candidates and text matches are evidence aids, not proof of experimental use; verify entities and numeric claims in the paper's methods/experiments/results sections."
     }
   },
   "metadata_provenance": {

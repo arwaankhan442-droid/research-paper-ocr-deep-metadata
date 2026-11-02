@@ -19,6 +19,16 @@ class PipelineUnitTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             pipeline.normalize_github_url("https://example.com/project")
 
+    def test_evidence_snippet_returns_context(self):
+        snippet = pipeline.find_evidence_snippet("Results show Pass@1 improved on SWE-bench Verified.", "Pass@1")
+        self.assertIn("Pass@1", snippet)
+        self.assertIn("Results", snippet)
+
+    def test_candidate_discovery_surfaces_benchmark_and_metric(self):
+        found = pipeline.discover_candidate_evidence("On SWE-bench Verified, Pass@1 reached 75.20%.")
+        self.assertTrue(found["benchmark_or_dataset_candidates"])
+        self.assertTrue(found["metric_claim_candidates"])
+
     def test_all_five_reviewed_configs_have_required_fields(self):
         config = json.loads(pipeline.CONFIG_PATH.read_text(encoding="utf-8"))
         self.assertEqual(set(config), set(pipeline.IDS))

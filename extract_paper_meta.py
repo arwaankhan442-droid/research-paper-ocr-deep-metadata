@@ -130,6 +130,49 @@ def normalize_github_url(url: str | None) -> str | None:
     return f"https://github.com/{match.group(1)}/{match.group(2).removesuffix('.git')}"
 
 
+def find_evidence_snippet(text: str, term: str, window: int = 220) -> str | None:
+    """Return a short source passage around the first case-insensitive match."""
+    if not term:
+        return None
+    match = re.search(re.escape(term), text, flags=re.IGNORECASE)
+    if not match:
+        return None
+    start = max(0, match.start() - window // 2)
+    end = min(len(text), match.end() + window // 2)
+    return text[start:end].strip()
+
+
+def discover_candidate_evidence(text: str) -> dict[str, list[dict[str, str]]]:
+    """Surface review candidates from PDF text; candidates are not auto-promoted to facts."""
+    patterns = {
+        "benchmark_or_dataset_candidates": re.compile(
+            r"\b(?:SWE-bench(?:\s+Verified)?|RealEstate10K|CO3Dv2|ScanNet(?:-1500)?|"
+            r"ETH3D|DTU|Tanks and Temples|UniMERNet|CNN/DailyMail)\b", re.IGNORECASE
+        ),
+        "metric_claim_candidates": re.compile(
+            r"(?:Pass@1|AUC@\d+|accuracy|F1(?:-score)?|Chamfer(?: Distance)?|"
+            r"inference speed|memory savings|\d+(?:\.\d+)?\s*%|\d+(?:\.\d+)?\s*x)",
+            re.IGNORECASE,
+        ),
+    }
+    found: dict[str, list[dict[str, str]]] = {}
+    for label, pattern in patterns.items():
+        items: list[dict[str, str]] = []
+        seen: set[str] = set()
+        for match in pattern.finditer(text):
+            start = max(0, match.start() - 180)
+            end = min(len(text), match.end() + 220)
+            snippet = re.sub(r"\s+", " ", text[start:end]).strip()
+            key = snippet.casefold()
+            if key not in seen:
+                seen.add(key)
+                items.append({"matched_text": match.group(0), "snippet": snippet})
+            if len(items) >= 40:
+                break
+        found[label] = items
+    return found
+
+
 def validate_override(paper_id: str, config: dict[str, Any], paper_text: str) -> dict[str, Any]:
     """Validate shape and report whether curated entities appear in the PDF text."""
     repo = normalize_github_url(config.get("github_url"))
@@ -147,13 +190,22 @@ def validate_override(paper_id: str, config: dict[str, Any], paper_text: str) ->
         repo_evidence = repo.casefold() in text_lower or repo.removeprefix("https://github.com/").casefold() in text_lower
     model_mentions = [m for m in config.get("models", []) if str(m).casefold() in text_lower]
     dataset_mentions = [d for d in config.get("datasets", []) if str(d).casefold() in text_lower]
+    configured_entity_evidence = {
+        field: [
+            {"entity": str(entity), "snippet": find_evidence_snippet(paper_text, str(entity))}
+            for entity in config.get(field, [])
+        ]
+        for field in ("models", "datasets", "tasks", "methods")
+    }
     return {
         "github_url_found_in_pdf_text": repo_evidence,
         "configured_model_mentions_found": model_mentions,
         "configured_dataset_mentions_found": dataset_mentions,
         "configured_model_count": len(config.get("models", [])),
         "configured_dataset_count": len(config.get("datasets", [])),
-        "note": "Mention checks are evidence aids, not proof of experimental use; review the cited paper sections/tables.",
+        "configured_entity_evidence": configured_entity_evidence,
+        "discovered_candidates_for_manual_review": discover_candidate_evidence(paper_text),
+        "note": "Candidates and text matches are evidence aids, not proof of experimental use; verify entities and numeric claims in the paper's methods/experiments/results sections.",
     }
 
 

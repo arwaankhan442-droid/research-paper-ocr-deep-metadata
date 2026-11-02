@@ -42,9 +42,9 @@
       },
       {
         "benchmark": "Formula recognition inference speed",
-        "metric": "Speedup factor",
+        "metric": "GPU inference speedup (batch size 15)",
         "value": "16x faster",
-        "comparison_target": "PP-FormulaNet-L (verify exact comparison in paper results)"
+        "comparison_target": "UniMERNet (GPU inference, batch size 15)"
       }
     ],
     "abstract": "Formula recognition is an important task in document intelligence. It involves converting mathematical expressions from document images into structured symbolic formats that computers can easily work with. LaTeX is the most common format used for this purpose. In this work, we present PP-FormulaNet, a state-of-the-art formula recognition model that excels in both accuracy and efficiency. To meet the diverse needs of applications, we have developed two specialized models: PP-FormulaNet-L, tailored for high-accuracy scenarios, and PP-FormulaNet-S, optimized for high-efficiency contexts. Our extensive evaluations reveal that PP-FormulaNet-L attains accuracy levels that surpass those of prominent models such as UniMERNet by a significant 6%. Conversely, PP-FormulaNet-S operates at speeds that are over 16 times faster. These advancements facilitate seamless integration of PP-FormulaNet into a broad spectrum of document processing environments that involve intricate mathematical formulas. Furthermore, we introduce a Formula Mining System, which is capable of extracting a vast amount of high-quality formula data. This system further enhances the robustness and applicability of our formula recognition model. Code and models are publicly available at PaddleOCR(https://github.com/PaddlePaddle/PaddleOCR) and PaddleX(https://github.com/PaddlePaddle/PaddleX)."
@@ -83,7 +83,12 @@
       "Qwen",
       "MiniLM"
     ],
-    "datasets": [],
+    "datasets": [
+      "MNLI",
+      "QNLI",
+      "SST-2",
+      "CNN/DailyMail (CNNDM)"
+    ],
     "sota_claims": [
       {
         "benchmark": "Downstream task evaluations",
@@ -203,15 +208,21 @@
     "sota_claims": [
       {
         "benchmark": "SWE-bench",
-        "metric": "Average Pass@1 improvement over baselines",
-        "value": "10.22%",
-        "comparison_target": "four state-of-the-art ensemble reasoning baselines"
+        "metric": "Pass@1 improvement range across evaluation settings",
+        "value": "5.83% to 14.60%",
+        "comparison_target": "Augment, Augment with Pruning, DeiBase, and DeiBase with Pruning"
       },
       {
         "benchmark": "SWE-bench Verified",
         "metric": "Pass@1",
         "value": "75.20%",
         "comparison_target": "leaderboard submissions at the time of the paper"
+      },
+      {
+        "benchmark": "SWE-bench",
+        "metric": "Average Pass@1 improvement over four baselines",
+        "value": "10.22%",
+        "comparison_target": "Augment, Augment with Pruning, DeiBase, and DeiBase with Pruning"
       }
     ],
     "abstract": "Software issue resolution is a critical challenge in software engineering and has garnered increasing attention in recent years. With the rapid advancement of large language models (LLMs), substantial progress has been made in addressing real-world software engineering tasks. Recent studies have introduced ensemble reasoning techniques to enhance the performance of LLM-based issue resolution. However, existing prompting-based methods still face limitations in effectively exploring large ensemble spaces and lack the capacity for repository-level understanding, both of which constrain their overall effectiveness. In this paper, we propose Trae Agent, the first agent-based ensemble reasoning approach for repository-level issue resolution. Trae Agent formulates our goal as an optimal solution search problem and addresses two key challenges, i.e., large ensemble spaces and repository-level understanding, through modular agents for generation, pruning, and selection. We conduct extensive experiments using three leading LLMs on the widely-adopted SWE-bench benchmark, comparing Trae Agent against four state-of-the-art ensemble reasoning techniques. Experimental results demonstrate that Trae Agent consistently achieves superior performance, with an average improvement of 10.22% over all baselines in terms of Pass@1. Trae Agent has achieved first place on the SWE-bench Verified leaderboard, with a notable Pass@1 score of 75.20%. We are pleased to release Trae Agent as an open-source project to support the research community, with all resources available at https://github.com/bytedance/trae-agent."
@@ -250,12 +261,27 @@
       "VGGSfM v2"
     ],
     "datasets": [
+      "Co3Dv2",
+      "BlendMVS",
+      "DL3DV",
+      "MegaDepth",
+      "Kubric",
+      "WildRGB",
+      "ScanNet",
+      "HyperSim",
+      "Mapillary",
+      "Habitat",
+      "Replica",
+      "MVS-Synth",
+      "PointOdyssey",
+      "Virtual KITTI",
+      "Aria Synthetic Environments",
+      "Aria Digital Twin",
+      "Synthetic artist-created assets similar to Objaverse",
       "RealEstate10K",
-      "CO3Dv2",
       "ScanNet-1500",
-      "ETH3D",
       "DTU",
-      "Tanks and Temples"
+      "ETH3D"
     ],
     "sota_claims": [
       {
@@ -275,6 +301,12 @@
         "metric": "Overall Chamfer distance",
         "value": "0.677 in approximately 0.2 seconds",
         "comparison_target": "MASt3R (0.826, approximately 9 seconds) and DUSt3R (1.005, approximately 7 seconds)"
+      },
+      {
+        "benchmark": "ScanNet-1500",
+        "metric": "AUC@20",
+        "value": "73.4",
+        "comparison_target": "Roma (70.9)"
       }
     ],
     "abstract": "We present VGGT, a feed-forward neural network that directly infers all key 3D attributes of a scene, including camera parameters, point maps, depth maps, and 3D point tracks, from one, a few, or hundreds of its views. This approach is a step forward in 3D computer vision, where models have typically been constrained to and specialized for single tasks. It is also simple and efficient, reconstructing images in under one second, and still outperforming alternatives that require post-processing with visual geometry optimization techniques. The network achieves state-of-the-art results in multiple 3D tasks, including camera parameter estimation, multi-view depth estimation, dense point cloud reconstruction, and 3D point tracking. We also show that using pretrained VGGT as a feature backbone significantly enhances downstream tasks, such as non-rigid point tracking and feed-forward novel view synthesis. Code and models are publicly available at https://github.com/facebookresearch/vggt."

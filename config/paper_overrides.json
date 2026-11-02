@@ -30,9 +30,9 @@
       },
       {
         "benchmark": "Formula recognition inference speed",
-        "metric": "Speedup factor",
+        "metric": "GPU inference speedup (batch size 15)",
         "value": "16x faster",
-        "comparison_target": "PP-FormulaNet-L (verify exact comparison in paper results)"
+        "comparison_target": "UniMERNet (GPU inference, batch size 15)"
       }
     ]
   },
@@ -56,7 +56,12 @@
       "Qwen",
       "MiniLM"
     ],
-    "datasets": [],
+    "datasets": [
+      "MNLI",
+      "QNLI",
+      "SST-2",
+      "CNN/DailyMail (CNNDM)"
+    ],
     "sota_claims": [
       {
         "benchmark": "Downstream task evaluations",
@@ -135,15 +140,21 @@
     "sota_claims": [
       {
         "benchmark": "SWE-bench",
-        "metric": "Average Pass@1 improvement over baselines",
-        "value": "10.22%",
-        "comparison_target": "four state-of-the-art ensemble reasoning baselines"
+        "metric": "Pass@1 improvement range across evaluation settings",
+        "value": "5.83% to 14.60%",
+        "comparison_target": "Augment, Augment with Pruning, DeiBase, and DeiBase with Pruning"
       },
       {
         "benchmark": "SWE-bench Verified",
         "metric": "Pass@1",
         "value": "75.20%",
         "comparison_target": "leaderboard submissions at the time of the paper"
+      },
+      {
+        "benchmark": "SWE-bench",
+        "metric": "Average Pass@1 improvement over four baselines",
+        "value": "10.22%",
+        "comparison_target": "Augment, Augment with Pruning, DeiBase, and DeiBase with Pruning"
       }
     ]
   },
@@ -168,12 +179,27 @@
       "VGGSfM v2"
     ],
     "datasets": [
+      "Co3Dv2",
+      "BlendMVS",
+      "DL3DV",
+      "MegaDepth",
+      "Kubric",
+      "WildRGB",
+      "ScanNet",
+      "HyperSim",
+      "Mapillary",
+      "Habitat",
+      "Replica",
+      "MVS-Synth",
+      "PointOdyssey",
+      "Virtual KITTI",
+      "Aria Synthetic Environments",
+      "Aria Digital Twin",
+      "Synthetic artist-created assets similar to Objaverse",
       "RealEstate10K",
-      "CO3Dv2",
       "ScanNet-1500",
-      "ETH3D",
       "DTU",
-      "Tanks and Temples"
+      "ETH3D"
     ],
     "sota_claims": [
       {
@@ -193,6 +219,12 @@
         "metric": "Overall Chamfer distance",
         "value": "0.677 in approximately 0.2 seconds",
         "comparison_target": "MASt3R (0.826, approximately 9 seconds) and DUSt3R (1.005, approximately 7 seconds)"
+      },
+      {
+        "benchmark": "ScanNet-1500",
+        "metric": "AUC@20",
+        "value": "73.4",
+        "comparison_target": "Roma (70.9)"
       }
     ]
   }
