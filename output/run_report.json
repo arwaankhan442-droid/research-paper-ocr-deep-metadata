@@ -1,0 +1,525 @@
+{
+  "expected": 5,
+  "extracted": 5,
+  "errors": [],
+  "paper_evidence": {
+    "2503.18382": {
+      "pdf_path": "papers\\2503.18382.pdf",
+      "pdf_pages": 13,
+      "pdf_text_characters": 41513,
+      "ocr_pages": [],
+      "page_details": [
+        {
+          "page": 1,
+          "characters": 4853,
+          "ocr_used": false
+        },
+        {
+          "page": 2,
+          "characters": 6193,
+          "ocr_used": false
+        },
+        {
+          "page": 3,
+          "characters": 3667,
+          "ocr_used": false
+        },
+        {
+          "page": 4,
+          "characters": 6811,
+          "ocr_used": false
+        },
+        {
+          "page": 5,
+          "characters": 7382,
+          "ocr_used": false
+        },
+        {
+          "page": 6,
+          "characters": 6371,
+          "ocr_used": false
+        },
+        {
+          "page": 7,
+          "characters": 8316,
+          "ocr_used": false
+        },
+        {
+          "page": 8,
+          "characters": 7350,
+          "ocr_used": false
+        },
+        {
+          "page": 9,
+          "characters": 1690,
+          "ocr_used": false
+        },
+        {
+          "page": 10,
+          "characters": 1281,
+          "ocr_used": false
+        },
+        {
+          "page": 11,
+          "characters": 1018,
+          "ocr_used": false
+        },
+        {
+          "page": 12,
+          "characters": 1013,
+          "ocr_used": false
+        },
+        {
+          "page": 13,
+          "characters": 1022,
+          "ocr_used": false
+        }
+      ],
+      "github_url_found_in_pdf_text": true,
+      "configured_model_mentions_found": [
+        "PP-FormulaNet-L",
+        "PP-FormulaNet-S",
+        "UniMERNet"
+      ],
+      "configured_dataset_mentions_found": [],
+      "configured_model_count": 3,
+      "configured_dataset_count": 2,
+      "note": "Mention checks are evidence aids, not proof of experimental use; review the cited paper sections/tables."
+    },
+    "2510.13998": {
+      "pdf_path": "papers\\2510.13998.pdf",
+      "pdf_pages": 12,
+      "pdf_text_characters": 41797,
+      "ocr_pages": [],
+      "page_details": [
+        {
+          "page": 1,
+          "characters": 4605,
+          "ocr_used": false
+        },
+        {
+          "page": 2,
+          "characters": 4449,
+          "ocr_used": false
+        },
+        {
+          "page": 3,
+          "characters": 3828,
+          "ocr_used": false
+        },
+        {
+          "page": 4,
+          "characters": 4212,
+          "ocr_used": false
+        },
+        {
+          "page": 5,
+          "characters": 4058,
+          "ocr_used": false
+        },
+        {
+          "page": 6,
+          "characters": 4382,
+          "ocr_used": false
+        },
+        {
+          "page": 7,
+          "characters": 4531,
+          "ocr_used": false
+        },
+        {
+          "page": 8,
+          "characters": 2839,
+          "ocr_used": false
+        },
+        {
+          "page": 9,
+          "characters": 5642,
+          "ocr_used": false
+        },
+        {
+          "page": 10,
+          "characters": 3837,
+          "ocr_used": false
+        },
+        {
+          "page": 11,
+          "characters": 4086,
+          "ocr_used": false
+        },
+        {
+          "page": 12,
+          "characters": 3411,
+          "ocr_used": false
+        }
+      ],
+      "github_url_found_in_pdf_text": true,
+      "configured_model_mentions_found": [
+        "BitDistill",
+        "Qwen",
+        "MiniLM"
+      ],
+      "configured_dataset_mentions_found": [],
+      "configured_model_count": 4,
+      "configured_dataset_count": 0,
+      "note": "Mention checks are evidence aids, not proof of experimental use; review the cited paper sections/tables."
+    },
+    "2607.18859": {
+      "pdf_path": "papers\\2607.18859.pdf",
+      "pdf_pages": 14,
+      "pdf_text_characters": 85329,
+      "ocr_pages": [],
+      "page_details": [
+        {
+          "page": 1,
+          "characters": 5901,
+          "ocr_used": false
+        },
+        {
+          "page": 2,
+          "characters": 7787,
+          "ocr_used": false
+        },
+        {
+          "page": 3,
+          "characters": 7157,
+          "ocr_used": false
+        },
+        {
+          "page": 4,
+          "characters": 8301,
+          "ocr_used": false
+        },
+        {
+          "page": 5,
+          "characters": 7638,
+          "ocr_used": false
+        },
+        {
+          "page": 6,
+          "characters": 6728,
+          "ocr_used": false
+        },
+        {
+          "page": 7,
+          "characters": 5840,
+          "ocr_used": false
+        },
+        {
+          "page": 8,
+          "characters": 8623,
+          "ocr_used": false
+        },
+        {
+          "page": 9,
+          "characters": 9719,
+          "ocr_used": false
+        },
+        {
+          "page": 10,
+          "characters": 9078,
+          "ocr_used": false
+        },
+        {
+          "page": 11,
+          "characters": 10582,
+          "ocr_used": false
+        },
+        {
+          "page": 12,
+          "characters": 12416,
+          "ocr_used": false
+        },
+        {
+          "page": 13,
+          "characters": 12563,
+          "ocr_used": false
+        },
+        {
+          "page": 14,
+          "characters": 4922,
+          "ocr_used": false
+        }
+      ],
+      "github_url_found_in_pdf_text": true,
+      "configured_model_mentions_found": [
+        "PhoenixRepair",
+        "DeepSeek-V3.1",
+        "DeepSeek-V3.2",
+        "Qwen-Coder-Plus",
+        "GLM-4.7",
+        "MiniMax-M2.5",
+        "SWE-agent"
+      ],
+      "configured_dataset_mentions_found": [
+        "SWE-bench Verified"
+      ],
+      "configured_model_count": 7,
+      "configured_dataset_count": 1,
+      "note": "Mention checks are evidence aids, not proof of experimental use; review the cited paper sections/tables."
+    },
+    "2507.23370": {
+      "pdf_path": "papers\\2507.23370.pdf",
+      "pdf_pages": 23,
+      "pdf_text_characters": 79629,
+      "ocr_pages": [],
+      "page_details": [
+        {
+          "page": 1,
+          "characters": 4559,
+          "ocr_used": false
+        },
+        {
+          "page": 2,
+          "characters": 5426,
+          "ocr_used": false
+        },
+        {
+          "page": 3,
+          "characters": 4827,
+          "ocr_used": false
+        },
+        {
+          "page": 4,
+          "characters": 3541,
+          "ocr_used": false
+        },
+        {
+          "page": 5,
+          "characters": 6218,
+          "ocr_used": false
+        },
+        {
+          "page": 6,
+          "characters": 3624,
+          "ocr_used": false
+        },
+        {
+          "page": 7,
+          "characters": 3356,
+          "ocr_used": false
+        },
+        {
+          "page": 8,
+          "characters": 3438,
+          "ocr_used": false
+        },
+        {
+          "page": 9,
+          "characters": 4428,
+          "ocr_used": false
+        },
+        {
+          "page": 10,
+          "characters": 3392,
+          "ocr_used": false
+        },
+        {
+          "page": 11,
+          "characters": 3779,
+          "ocr_used": false
+        },
+        {
+          "page": 12,
+          "characters": 4693,
+          "ocr_used": false
+        },
+        {
+          "page": 13,
+          "characters": 4669,
+          "ocr_used": false
+        },
+        {
+          "page": 14,
+          "characters": 2707,
+          "ocr_used": false
+        },
+        {
+          "page": 15,
+          "characters": 4363,
+          "ocr_used": false
+        },
+        {
+          "page": 16,
+          "characters": 2411,
+          "ocr_used": false
+        },
+        {
+          "page": 17,
+          "characters": 4072,
+          "ocr_used": false
+        },
+        {
+          "page": 18,
+          "characters": 4137,
+          "ocr_used": false
+        },
+        {
+          "page": 19,
+          "characters": 4775,
+          "ocr_used": false
+        },
+        {
+          "page": 20,
+          "characters": 3157,
+          "ocr_used": false
+        },
+        {
+          "page": 21,
+          "characters": 3837,
+          "ocr_used": false
+        },
+        {
+          "page": 22,
+          "characters": 4269,
+          "ocr_used": false
+        },
+        {
+          "page": 23,
+          "characters": 2807,
+          "ocr_used": false
+        }
+      ],
+      "github_url_found_in_pdf_text": true,
+      "configured_model_mentions_found": [
+        "Trae Agent"
+      ],
+      "configured_dataset_mentions_found": [
+        "SWE-bench",
+        "SWE-bench Verified"
+      ],
+      "configured_model_count": 1,
+      "configured_dataset_count": 2,
+      "note": "Mention checks are evidence aids, not proof of experimental use; review the cited paper sections/tables."
+    },
+    "2503.11651": {
+      "pdf_path": "papers\\2503.11651.pdf",
+      "pdf_pages": 20,
+      "pdf_text_characters": 91724,
+      "ocr_pages": [],
+      "page_details": [
+        {
+          "page": 1,
+          "characters": 3371,
+          "ocr_used": false
+        },
+        {
+          "page": 2,
+          "characters": 7519,
+          "ocr_used": false
+        },
+        {
+          "page": 3,
+          "characters": 5676,
+          "ocr_used": false
+        },
+        {
+          "page": 4,
+          "characters": 4432,
+          "ocr_used": false
+        },
+        {
+          "page": 5,
+          "characters": 3683,
+          "ocr_used": false
+        },
+        {
+          "page": 6,
+          "characters": 7016,
+          "ocr_used": false
+        },
+        {
+          "page": 7,
+          "characters": 7489,
+          "ocr_used": false
+        },
+        {
+          "page": 8,
+          "characters": 4806,
+          "ocr_used": false
+        },
+        {
+          "page": 9,
+          "characters": 6761,
+          "ocr_used": false
+        },
+        {
+          "page": 10,
+          "characters": 7000,
+          "ocr_used": false
+        },
+        {
+          "page": 11,
+          "characters": 6897,
+          "ocr_used": false
+        },
+        {
+          "page": 12,
+          "characters": 11378,
+          "ocr_used": false
+        },
+        {
+          "page": 13,
+          "characters": 5829,
+          "ocr_used": false
+        },
+        {
+          "page": 14,
+          "characters": 8192,
+          "ocr_used": false
+        },
+        {
+          "page": 15,
+          "characters": 8362,
+          "ocr_used": false
+        },
+        {
+          "page": 16,
+          "characters": 6929,
+          "ocr_used": false
+        },
+        {
+          "page": 17,
+          "characters": 8148,
+          "ocr_used": false
+        },
+        {
+          "page": 18,
+          "characters": 8399,
+          "ocr_used": false
+        },
+        {
+          "page": 19,
+          "characters": 6910,
+          "ocr_used": false
+        },
+        {
+          "page": 20,
+          "characters": 846,
+          "ocr_used": false
+        }
+      ],
+      "github_url_found_in_pdf_text": true,
+      "configured_model_mentions_found": [
+        "VGGT",
+        "DUSt3R",
+        "MASt3R",
+        "VGGSfM v2"
+      ],
+      "configured_dataset_mentions_found": [
+        "RealEstate10K",
+        "CO3Dv2",
+        "ScanNet-1500",
+        "ETH3D",
+        "DTU"
+      ],
+      "configured_model_count": 4,
+      "configured_dataset_count": 6,
+      "note": "Mention checks are evidence aids, not proof of experimental use; review the cited paper sections/tables."
+    }
+  },
+  "metadata_provenance": {
+    "title_authors_abstract_publication_date": "arXiv Atom API",
+    "github_tasks_methods_models_datasets_sota_claims": "reviewed config/paper_overrides.json, checked against extracted PDF text"
+  }
+}

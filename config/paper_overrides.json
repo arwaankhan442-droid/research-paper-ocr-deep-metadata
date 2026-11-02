@@ -1,0 +1,199 @@
+{
+  "2503.18382": {
+    "github_url": "https://github.com/PaddlePaddle/PaddleOCR",
+    "is_official_code": true,
+    "tasks": [
+      "document-understanding",
+      "mathematical-formula-recognition",
+      "optical-character-recognition"
+    ],
+    "methods": [
+      "deep-learning",
+      "formula-recognition",
+      "formula-data-mining"
+    ],
+    "models": [
+      "PP-FormulaNet-L",
+      "PP-FormulaNet-S",
+      "UniMERNet"
+    ],
+    "datasets": [
+      "UniMERNet Benchmark",
+      "Formula Mining System Dataset"
+    ],
+    "sota_claims": [
+      {
+        "benchmark": "UniMERNet Benchmark",
+        "metric": "Accuracy",
+        "value": "+6.0%",
+        "comparison_target": "UniMERNet"
+      },
+      {
+        "benchmark": "Formula recognition inference speed",
+        "metric": "Speedup factor",
+        "value": "16x faster",
+        "comparison_target": "PP-FormulaNet-L (verify exact comparison in paper results)"
+      }
+    ]
+  },
+  "2510.13998": {
+    "github_url": "https://github.com/microsoft/BitNet",
+    "is_official_code": true,
+    "tasks": [
+      "large-language-model-compression",
+      "model-distillation",
+      "efficient-inference"
+    ],
+    "methods": [
+      "1.58-bit-quantization",
+      "SubLN",
+      "multi-head-attention-distillation",
+      "continual-pretraining"
+    ],
+    "models": [
+      "BitNet-b1.58",
+      "BitDistill",
+      "Qwen",
+      "MiniLM"
+    ],
+    "datasets": [],
+    "sota_claims": [
+      {
+        "benchmark": "Downstream task evaluations",
+        "metric": "Memory reduction",
+        "value": "up to 10x",
+        "comparison_target": "full-precision counterpart models"
+      },
+      {
+        "benchmark": "CPU inference",
+        "metric": "Inference speedup",
+        "value": "2.65x faster",
+        "comparison_target": "full-precision counterpart models"
+      }
+    ]
+  },
+  "2607.18859": {
+    "github_url": "https://github.com/DeepSoftwareAnalytics/PhoenixRepair",
+    "is_official_code": true,
+    "tasks": [
+      "automated-software-repair",
+      "repository-level-issue-resolution",
+      "fault-localization"
+    ],
+    "methods": [
+      "multi-agent-framework",
+      "multi-location-sampling",
+      "iterative-reflection",
+      "patch-refinement"
+    ],
+    "models": [
+      "PhoenixRepair",
+      "DeepSeek-V3.1",
+      "DeepSeek-V3.2",
+      "Qwen-Coder-Plus",
+      "GLM-4.7",
+      "MiniMax-M2.5",
+      "SWE-agent"
+    ],
+    "datasets": [
+      "SWE-bench Verified"
+    ],
+    "sota_claims": [
+      {
+        "benchmark": "SWE-bench Verified",
+        "metric": "Relative improvement over SWE-agent",
+        "value": "+7.8%",
+        "comparison_target": "SWE-agent with DeepSeek-V3.1"
+      },
+      {
+        "benchmark": "SWE-bench Verified",
+        "metric": "Resolved rate (Pass@1)",
+        "value": "76.0%",
+        "comparison_target": "prior agent systems, using MiniMax-M2.5"
+      }
+    ]
+  },
+  "2507.23370": {
+    "github_url": "https://github.com/bytedance/trae-agent",
+    "is_official_code": true,
+    "tasks": [
+      "automated-software-engineering",
+      "repository-level-issue-resolution"
+    ],
+    "methods": [
+      "agent-based-ensemble-reasoning",
+      "test-time-scaling",
+      "generation-pruning-selection"
+    ],
+    "models": [
+      "Trae Agent"
+    ],
+    "datasets": [
+      "SWE-bench",
+      "SWE-bench Verified"
+    ],
+    "sota_claims": [
+      {
+        "benchmark": "SWE-bench",
+        "metric": "Average Pass@1 improvement over baselines",
+        "value": "10.22%",
+        "comparison_target": "four state-of-the-art ensemble reasoning baselines"
+      },
+      {
+        "benchmark": "SWE-bench Verified",
+        "metric": "Pass@1",
+        "value": "75.20%",
+        "comparison_target": "leaderboard submissions at the time of the paper"
+      }
+    ]
+  },
+  "2503.11651": {
+    "github_url": "https://github.com/facebookresearch/vggt",
+    "is_official_code": true,
+    "tasks": [
+      "3D-reconstruction",
+      "camera-pose-estimation",
+      "multi-view-depth-estimation",
+      "3D-point-tracking"
+    ],
+    "methods": [
+      "feed-forward-transformer",
+      "multi-view-geometry",
+      "3D-vision"
+    ],
+    "models": [
+      "VGGT",
+      "DUSt3R",
+      "MASt3R",
+      "VGGSfM v2"
+    ],
+    "datasets": [
+      "RealEstate10K",
+      "CO3Dv2",
+      "ScanNet-1500",
+      "ETH3D",
+      "DTU",
+      "Tanks and Temples"
+    ],
+    "sota_claims": [
+      {
+        "benchmark": "RealEstate10K camera pose estimation",
+        "metric": "AUC@30",
+        "value": "85.3",
+        "comparison_target": "prior methods in the paper comparison"
+      },
+      {
+        "benchmark": "CO3Dv2 camera pose estimation",
+        "metric": "AUC@30",
+        "value": "88.2",
+        "comparison_target": "prior methods in the paper comparison"
+      },
+      {
+        "benchmark": "ETH3D reconstruction",
+        "metric": "Overall Chamfer distance",
+        "value": "0.677 in approximately 0.2 seconds",
+        "comparison_target": "MASt3R (0.826, approximately 9 seconds) and DUSt3R (1.005, approximately 7 seconds)"
+      }
+    ]
+  }
+}
